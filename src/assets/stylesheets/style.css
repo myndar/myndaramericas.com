@@ -357,9 +357,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-body {
-  background-color: yellow; }
-
 .container::after {
   clear: both;
   content: "";
@@ -392,6 +389,7 @@ body {
 
 .example__column--fancy {
   height: 100vh;
+  background-image: -webkit-linear-gradient(top left, #21e9f4, #00d4ff);
   background-image: linear-gradient(to bottom right, #21e9f4, #00d4ff); }
 
 /*# sourceMappingURL=style.css.map */
