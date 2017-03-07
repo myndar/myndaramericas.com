@@ -6,15 +6,12 @@ $ bundle instsll
 $ yarn install
 ```
 
-In `_config.yml`, set `url` to Netlify url (or custom domain)
-
 ## Modifications
 
 - assets that Gulp copies to `.tmp` also gets copied to `src`
 - no `rev()` on assets
 - use `src` and `dist` as source and destination
-- no `inject`
-- links to `css` and `js` that point to `site.url` in production
+- don't exclude `assets` in `_config.yml`
 
 ## Netlify
 ```
