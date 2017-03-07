@@ -17,8 +17,12 @@
 
   <!-- JS -->
   <!-- inject:js -->
-  <script src="/assets/javascript/index.js"></script>
   <!-- endinject -->
+  {% if jekyll.environment == "production" %}
+    <script src="{{ site.url }}/assets/javascript/index.js"></script>
+  {% else %}
+    <script src="/assets/javascript/index.js"></script>
+  {% endif %}
 
   </body>
 

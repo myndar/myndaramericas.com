@@ -2,7 +2,7 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: Jekyllized Boilerplate
 description:
-url: http://www.example.com
+url: http://librarian-rebecca-17617.netlify.com
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
