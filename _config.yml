@@ -7,7 +7,7 @@ url: http://librarian-rebecca-17617.netlify.com
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
 destination: dist
-exclude: ['assets']
+exclude:
 
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
