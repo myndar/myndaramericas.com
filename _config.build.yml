@@ -1,5 +1,5 @@
 # Run during the 'gulp build' command
-# Overrides these options in _config.yml
+# Overrides _config.yml
 
 # Hides your drafts and future posts
 future: false

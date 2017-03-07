@@ -43,8 +43,7 @@ gulp.task('scripts', () =>
     // .pipe(when(argv.prod, rev()))
     .pipe(when(!argv.prod, sourcemaps.write('.')))
     .pipe(when(argv.prod, gulp.dest('.tmp/assets/javascript')))
-    // prob not needed as cloudcannon does not use gulp --prod but just jekyll
-    // .pipe(when(argv.prod, gulp.dest('src/assets/javascript'))) // for cloud cannon
+    .pipe(when(argv.prod, gulp.dest('src/assets/javascript'))) // for cloud cannon
     .pipe(when(argv.prod, when('*.js', gzip({append: true}))))
     .pipe(when(argv.prod, size({
       gzip: true,
@@ -80,8 +79,7 @@ gulp.task('styles', () =>
     // .pipe(when(argv.prod, rev()))
     .pipe(when(!argv.prod, sourcemaps.write('.')))
     .pipe(when(argv.prod, gulp.dest('.tmp/assets/stylesheets')))
-    // prob not needed as cloudcannon does not use gulp --prod but just jekyll
-    // .pipe($.if(argv.prod, gulp.dest('src/assets/stylesheets'))) // for cloudcannon
+    .pipe(when(argv.prod, gulp.dest('src/assets/stylesheets'))) // for cloudcannon
     .pipe(when(argv.prod, when('*.css', gzip({append: true}))))
     .pipe(when(argv.prod, size({
       gzip: true,
