@@ -357,6 +357,13 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+body {
+  background: -webkit-linear-gradient(#e98a00, #f5aa2f);
+  background: linear-gradient(#e98a00, #f5aa2f);
+  display: -webkit-box;
+  display: flex;
+  border: 4px solid blue; }
+
 .container::after {
   clear: both;
   content: "";
