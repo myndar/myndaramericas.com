@@ -5,8 +5,8 @@ description:
 url: http://www.example.com
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
-source: .tmp/src
-destination: .tmp/dist
+source: src
+destination: dist
 exclude: ['assets']
 
 # Same as the title etc for your site but can instead be

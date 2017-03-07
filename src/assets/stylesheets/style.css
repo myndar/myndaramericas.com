@@ -358,7 +358,7 @@ html {
   -moz-osx-font-smoothing: grayscale; }
 
 body {
-  background-color: khaki; }
+  background-color: red; }
 
 .container::after {
   clear: both;
