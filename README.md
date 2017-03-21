@@ -24,3 +24,7 @@ Public folder: dist/
 ```
 JEKYLL_ENV: production
 ```
+
+## To DO
+
+- don't build assets on Netlify, only locally
