@@ -19,6 +19,12 @@
   <!-- inject:js -->
   <!-- endinject -->
 
+  <!-- for cloudcannon -->
+  {% if site.env == 'production' %}
+    <script src=/assets/javascript/index.js></script>
+  {% endif %}
+   <!-- end -->
+
 
   </body>
 
