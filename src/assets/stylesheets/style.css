@@ -353,43 +353,60 @@ td,
 th {
   padding: 0; }
 
+.site-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  box-shadow: 2px 2px 3px 0px rgba(238, 238, 238, 0.5);
+  background-color: #FFF; }
+  .site-header a {
+    color: #313131;
+    text-decoration: none; }
+  .site-header .menu-item {
+    display: inline-block; }
+    .site-header .menu-item a {
+      display: inline-block;
+      padding: 2rem 1rem; }
+  .site-header .submenu {
+    display: none; }
+  .site-header .submenu-item {
+    display: none; }
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.container::after {
-  clear: both;
-  content: "";
-  display: block; }
+html {
+  font-family: 'Maven Pro', sans-serif; }
 
-.example-1__column-2 {
-  width: calc(16.6666666667% - 23.3333333333px);
-  float: left;
-  margin-left: 20px; }
+.brand {
+  text-align: center; }
 
-.example-1__column-4 {
-  width: calc(100% - 40px);
-  float: left;
-  margin-left: 20px; }
-  @media only screen and (min-width: 992px) {
-    .example-1__column-4 {
-      width: calc(25% - 25px);
-      float: left;
-      margin-left: 20px; } }
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .grid-container::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .grid-container .grid-column {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; }
 
-.example-1__column-8 {
-  width: calc(100% - 40px);
-  float: left;
-  margin-left: 20px; }
-  @media only screen and (min-width: 992px) {
-    .example-1__column-8 {
-      width: calc(50% - 30px);
-      float: left;
-      margin-left: 20px; } }
+.logo-wrapper {
+  text-align: center;
+  padding: 2rem 0; }
 
-.example__column--fancy {
-  height: 100vh;
-  background-image: -webkit-linear-gradient(top left, #21e9f4, #00d4ff);
-  background-image: linear-gradient(to bottom right, #21e9f4, #00d4ff); }
+.logo {
+  margin: 8rem auto 0;
+  width: 500px; }
+
+.filler {
+  height: 150vh; }
 
 /*# sourceMappingURL=style.css.map */

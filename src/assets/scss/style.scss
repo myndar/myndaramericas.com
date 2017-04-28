@@ -5,39 +5,45 @@
 @import
   "node_modules/normalize.scss/normalize",
   "vars",
+  "modules/header",
   "neat/neat";
 
 // modules
 @import
   "modules/common";
 
+html {
+  font-family: 'Maven Pro', sans-serif;
+}
+
 body {
 }
 
-.container {
-  // @include grid-visual(null, $desktop-grid);
+.brand {
+  text-align: center;
+}
+
+.grid-container {
+  // @include grid-visual();
+  max-width: 1200px;
+  margin: 0 auto;
   @include grid-container;
+  .grid-column {
+    @include grid-column(12);
+  }
 }
 
-.example-1__column-2 {
-  @include grid-column(2);
-}
-.example-1__column-4 {
-  @include grid-column;
-    @include grid-media($desktop-grid) {
-      @include grid-column(4 of 16);
-    }
-}
-.example-1__column-8 {
-  @include grid-column;
-    @include grid-media($desktop-grid) {
-      @include grid-column(8 of 16);
-    }
+.logo-wrapper {
+  text-align: center;
+  padding: 2rem 0;
 }
 
-.example__column--fancy {
-  // background-image: linear-gradient(to bottom right, #21e9f4, #00d4ff);
-  // color: #fff;
-  height: 100vh;
-  background-image: linear-gradient(to bottom right, #21e9f4, #00d4ff);
+.logo {
+  margin: 8rem auto 0;
+  width: 500px;
+}
+
+
+.filler {
+  height: 150vh;
 }
