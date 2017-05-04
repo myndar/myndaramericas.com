@@ -2724,6 +2724,8 @@ th {
   transition: all 0.2s ease;
   visibility: visible !important;
   opacity: 1 !important; }
+  .scrolled div.mini-logo a {
+    display: block; }
 
 .scrolled .right-room {
   -webkit-transition: all 0.3s ease;
@@ -2737,13 +2739,17 @@ th {
 
 .site-header div.mini-logo {
   position: absolute;
+  z-index: 99;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  top: 15px;
   left: 50%;
-  margin-left: -60px;
+  width: 150px;
+  margin-left: -75px;
   visibility: hidden;
-  opacity: 0; }
+  opacity: 0;
+  height: 100%; }
+  .site-header div.mini-logo img {
+    margin-top: 15px; }
 
 .site-header .right-room {
   -webkit-transition: all 0.2s ease;
