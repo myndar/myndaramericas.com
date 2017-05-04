@@ -2719,6 +2719,40 @@ th {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+.scrolled div.mini-logo {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  visibility: visible !important;
+  opacity: 1 !important; }
+
+.scrolled .right-room {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-right: 55px; }
+
+.scrolled .left-room {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-left: 55px; }
+
+.site-header div.mini-logo {
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  top: 15px;
+  left: 50%;
+  margin-left: -60px;
+  visibility: hidden;
+  opacity: 0; }
+
+.site-header .right-room {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.site-header .left-room {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
 .site-header {
   position: fixed;
   z-index: 99;
@@ -2740,6 +2774,13 @@ th {
       transition: all 0.2s ease;
       display: inline-block;
       padding: 2rem 1rem; }
+  .site-header div.mini-logo a {
+    padding-top: 0;
+    padding-bottom: 0; }
+    .site-header div.mini-logo a img.mini-logo {
+      display: inline;
+      max-width: 90px;
+      vertical-align: middle; }
   .site-header .submenu {
     position: absolute;
     top: 82px;
@@ -2809,7 +2850,31 @@ section#arrow {
   section#arrow i {
     margin-left: -.5rem;
     color: #626366;
-    font-size: 4rem; }
+    font-size: 4rem;
+    -webkit-animation: throb 2s infinite;
+            animation: throb 2s infinite; }
+
+@-webkit-keyframes throb {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+
+@keyframes throb {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
 
 .grid-container {
   max-width: 1200px;

@@ -49,8 +49,20 @@ section#arrow {
     margin-left: -.5rem;
     color: $light-gray;
     font-size: 4rem;
+    animation: throb 2s infinite;
   }
 }
+
+@keyframes throb {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
 
 // #brand i {
 //   position: absolute;
@@ -355,3 +367,4 @@ section#accuracy {
   // background-color: cornsilk;
   height: 150vh;
 }
+

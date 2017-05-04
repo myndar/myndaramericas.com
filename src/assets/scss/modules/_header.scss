@@ -1,5 +1,40 @@
 @import "../vars";
 
+.scrolled {
+  div.mini-logo {
+    // background-color: red;
+    transition: all 0.2s ease;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .right-room {
+    transition: all 0.3s ease;
+    padding-right: 55px;
+  }
+  .left-room {
+    transition: all 0.3s ease;
+    padding-left: 55px;
+  }
+}
+
+.site-header {
+  div.mini-logo {
+    position: absolute;
+    transition: all 0.2s ease;
+    top: 15px;
+    left: 50%;
+    margin-left: -60px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .right-room {
+    transition: all 0.2s ease;
+  }
+  .left-room {
+    transition: all 0.2s ease;
+  }
+}
+
 .site-header {
   position: fixed;
   z-index: 99;
@@ -28,6 +63,18 @@
     //   background-color: $gold;
     //   color: $gray;
     // }
+  }
+
+
+  div.mini-logo a {
+    padding-top: 0;
+    padding-bottom: 0;
+    img.mini-logo {
+      display: inline;
+      // padding-top: 1rem;
+      max-width: 90px;
+      vertical-align: middle;
+    }
   }
   .submenu {
     position: absolute;
