@@ -2728,14 +2728,16 @@ th {
   text-align: center;
   border-bottom: 1px solid #eee;
   box-shadow: 2px 2px 3px 0px rgba(238, 238, 238, 0.5);
-  background-color: #FFF; }
+  background-color: #877650; }
   .site-header a {
-    color: #877650;
+    color: white;
     text-decoration: none; }
   .site-header .menu-item {
     display: inline-block;
     position: relative; }
     .site-header .menu-item a {
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
       display: inline-block;
       padding: 2rem 1rem; }
   .site-header .submenu {
@@ -2747,9 +2749,8 @@ th {
     text-align: center;
     padding: 0;
     margin: 0;
-    border: 1px solid #eee;
     border-top: none;
-    box-shadow: 2px 2px 2px 0px rgba(204, 204, 204, 0.6);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
     display: none; }
   .site-header .trigger:hover .submenu {
     display: block; }
@@ -2761,12 +2762,12 @@ th {
     .site-header .submenu-item a {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
-      background-color: white; }
+      background-color: #877650;
+      color: white; }
     .site-header .submenu-item a:hover {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
-      background-color: #252829;
-      color: #877650; }
+      color: #252829; }
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -2775,12 +2776,40 @@ html {
 html {
   font-family: 'Maven Pro', sans-serif; }
 
-.brand {
+.page-content {
+  padding-bottom: 6rem; }
+
+section#brand {
+  position: relative;
   text-align: center;
-  height: 850px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  /* align horizontal */
+  -webkit-box-align: center;
+          align-items: center;
+  /* align vertical */
+  height: 100vh;
   background: url("/uploads/3-rings.jpg") no-repeat;
   background-position: bottom;
-  background-size: contain; }
+  background-size: contain;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(135, 118, 80, 0.2) 0%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.11) 78%, rgba(135, 118, 80, 0.2) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(315deg, rgba(135, 118, 80, 0.2) 0%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.11) 78%, rgba(135, 118, 80, 0.2) 100%);
+  background: linear-gradient(135deg, rgba(135, 118, 80, 0.2) 0%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.11) 78%, rgba(135, 118, 80, 0.2) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33877650', endColorstr='#33877650',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+
+section#arrow {
+  text-align: center;
+  margin-top: -8rem; }
+  section#arrow i {
+    margin-left: -.5rem;
+    color: #626366;
+    font-size: 4rem; }
 
 .grid-container {
   max-width: 1200px;
@@ -2796,18 +2825,17 @@ html {
 
 .logo-wrapper {
   text-align: center;
-  padding: 2rem 0 0; }
+  margin-bottom: 4rem; }
 
 .logo {
-  margin: 8rem auto 0;
-  width: 500px;
+  width: 50vw;
   position: relative;
   z-index: 1; }
 
 h1.intro {
   font-weight: normal;
   text-transform: uppercase;
-  color: #877650;
+  color: #626366;
   letter-spacing: 1px;
   display: inline-block;
   margin-top: 1em;
@@ -2815,9 +2843,211 @@ h1.intro {
 
 h2.intro {
   font-weight: normal;
-  color: #877650;
+  color: #626366;
   letter-spacing: 1px;
   margin: 0; }
+
+section#about {
+  margin-top: 10rem; }
+  section#about .grid-column {
+    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
+  section#about .image {
+    height: 700px;
+    background: url("/uploads/about.jpg") no-repeat;
+    background-size: cover;
+    position: relative; }
+    section#about .image .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.8); }
+    section#about .image .info-wrapper {
+      color: #252829;
+      padding: 2rem; }
+      section#about .image .info-wrapper h2.headline {
+        font-size: 65px;
+        margin: 0;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: #877650; }
+      section#about .image .info-wrapper h3.subhead {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: 1rem; }
+      section#about .image .info-wrapper p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem; }
+
+section#rfid {
+  margin-top: 10rem; }
+  section#rfid .grid-column {
+    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
+  section#rfid .image {
+    height: 700px;
+    background: url("/uploads/rfid.jpg") no-repeat;
+    background-size: cover;
+    position: relative; }
+    section#rfid .image .info {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgba(135, 118, 80, 0.5); }
+    section#rfid .image .info-wrapper {
+      color: #252829;
+      padding: 2rem; }
+      section#rfid .image .info-wrapper h2.headline {
+        font-size: 65px;
+        margin: 0;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: white; }
+      section#rfid .image .info-wrapper h3.subhead {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: 1rem; }
+        section#rfid .image .info-wrapper h3.subhead span {
+          font-weight: 700; }
+      section#rfid .image .info-wrapper p, section#rfid .image .info-wrapper ul {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem; }
+      section#rfid .image .info-wrapper ul {
+        line-height: 1.8; }
+
+section#realtime {
+  margin-top: 10rem; }
+  section#realtime .grid-column {
+    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
+  section#realtime .image {
+    height: 700px;
+    background: url("/uploads/mhand.jpg") no-repeat;
+    background-size: cover;
+    position: relative; }
+    section#realtime .image .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgba(135, 118, 80, 0.5); }
+    section#realtime .image .info-wrapper {
+      color: #252829;
+      padding: 2rem; }
+      section#realtime .image .info-wrapper h2.headline {
+        font-size: 65px;
+        margin: 0;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: white; }
+      section#realtime .image .info-wrapper h3.subhead {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: 1rem; }
+      section#realtime .image .info-wrapper p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem; }
+
+section#visibility {
+  margin-top: 10rem; }
+  section#visibility .grid-column {
+    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
+  section#visibility .image {
+    height: 700px;
+    background: url("/uploads/mtray.jpg") no-repeat;
+    background-size: cover;
+    position: relative; }
+    section#visibility .image .info {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.8); }
+    section#visibility .image .info-wrapper {
+      color: #252829;
+      padding: 2rem; }
+      section#visibility .image .info-wrapper h2.headline {
+        font-size: 65px;
+        margin: 0;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: #877650; }
+      section#visibility .image .info-wrapper h3.subhead {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: 1rem; }
+        section#visibility .image .info-wrapper h3.subhead span {
+          font-weight: 700; }
+      section#visibility .image .info-wrapper p, section#visibility .image .info-wrapper ul {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem; }
+      section#visibility .image .info-wrapper ul {
+        line-height: 1.8; }
+
+section#accuracy {
+  margin-top: 10rem; }
+  section#accuracy .grid-column {
+    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
+  section#accuracy .image {
+    height: 700px;
+    background: url("/uploads/mlog.jpg") no-repeat;
+    background-size: cover;
+    position: relative; }
+    section#accuracy .image .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.8); }
+    section#accuracy .image .info-wrapper {
+      color: #252829;
+      padding: 2rem; }
+      section#accuracy .image .info-wrapper h2.headline {
+        font-size: 65px;
+        margin: 0;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: #877650; }
+      section#accuracy .image .info-wrapper h3.subhead {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: 1rem; }
+        section#accuracy .image .info-wrapper h3.subhead span {
+          font-weight: 700; }
+      section#accuracy .image .info-wrapper p, section#accuracy .image .info-wrapper ul {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem; }
+      section#accuracy .image .info-wrapper ul {
+        line-height: 1.8; }
 
 .filler {
   height: 150vh; }

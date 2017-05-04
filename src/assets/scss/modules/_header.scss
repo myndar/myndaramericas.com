@@ -10,18 +10,24 @@
   // font-size: 14px;
   border-bottom: 1px solid #eee;
   box-shadow: 2px 2px 3px 0px rgba(238,238,238,0.5);
-  background-color: #FFF;
+  background-color: $gold;
   a {
-    color: $gold;
+    color: white;
     text-decoration: none;
   }
   .menu-item {
     display: inline-block;
     position: relative;
     a {
+      transition: all 0.2s ease;
       display: inline-block;
       padding: 2rem 1rem;
     }
+    // a:hover {
+    //   transition: all 0.2s ease;
+    //   background-color: $gold;
+    //   color: $gray;
+    // }
   }
   .submenu {
     position: absolute;
@@ -32,9 +38,9 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    border: 1px solid #eee;
+    // border: 1px solid #ccc;
     border-top: none;
-    box-shadow: 2px 2px 2px 0px rgba(204,204,204,0.6);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
     display: none;
   }
   .trigger:hover .submenu {
@@ -47,12 +53,13 @@
     line-height: 1.6;
     a {
       transition: all 0.2s ease;
-      background-color: white;
+      background-color: $gold;
+      color: white;
     }
     a:hover {
       transition: all 0.2s ease;
-      background-color: $gray;
-      color: $gold;
+      // background-color: $gray;
+      color: $gray;
     }
   }
 }
