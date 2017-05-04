@@ -10863,5 +10863,38 @@ Kibo.prototype.lastModifiersAndKey = function() {
     });
   });
 
+  $(function() {
+    var trigger = $('.trigger');
+    var submenu = $('.submenu');
+
+    trigger.click(function(event) {
+      event.preventDefault();
+    });
+
+
+
+    function showSubMenu() {
+      submenu.removeClass('hide');
+      submenu.addClass('show');
+    }
+
+    function hideSubMenu() {
+      submenu.removeClass('show');
+      submenu.addClass('hide');
+    }
+
+    trigger.hover(
+      function() {
+        showSubMenu();
+      }, function() {
+        hideSubMenu();
+      }
+    );
+
+    // $('.submenu-item a').on("click", function(){
+    //   setTimeout(hideSubMenu, 300);
+    // });
+   });
+
 })();
 //# sourceMappingURL=index.js.map

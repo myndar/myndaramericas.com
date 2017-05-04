@@ -107,11 +107,16 @@
     // border: 1px solid #ccc;
     border-top: none;
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
-    display: none;
   }
-  .trigger:hover .submenu {
-    display: block;
+  .submenu.hide {
+    opacity: 0;
   }
+  .submenu.show {
+    opacity: 1;
+  }
+  // .trigger:hover .submenu {
+  //   display: block;
+  // }
   .submenu-item {
     display: block;
     text-align: center;
