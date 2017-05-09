@@ -3122,6 +3122,112 @@ section#accuracy {
       section#accuracy .image .info-wrapper ul {
         line-height: 1.8; }
 
+section#awards {
+  margin-top: 10rem; }
+  section#awards .grid-column {
+    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
+  section#awards .image {
+    height: 700px;
+    background: url("/uploads/awards-crop.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; }
+    section#awards .image .info {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.9); }
+    section#awards .image .info-wrapper {
+      color: #252829;
+      padding: 2rem; }
+      section#awards .image .info-wrapper h2.headline {
+        font-size: 65px;
+        margin: 0;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        color: #877650; }
+      section#awards .image .info-wrapper h3.subhead {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: 1rem; }
+        section#awards .image .info-wrapper h3.subhead span {
+          font-weight: 700; }
+      section#awards .image .info-wrapper p:first-of-type {
+        margin-top: 3rem; }
+      section#awards .image .info-wrapper p span {
+        font-weight: 500; }
+      section#awards .image .info-wrapper p, section#awards .image .info-wrapper ul {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem; }
+      section#awards .image .info-wrapper ul {
+        line-height: 1.8; }
+
+section#contact {
+  margin-top: 10rem; }
+  section#contact .grid-column {
+    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
+  section#contact .image {
+    height: 700px;
+    background-size: cover;
+    position: relative; }
+    section#contact .image .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgba(135, 118, 80, 0.5); }
+    section#contact .image .logo-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      text-align: center; }
+      section#contact .image .logo-wrapper img {
+        width: 70%;
+        margin-top: 35%; }
+    section#contact .image .info-wrapper {
+      color: #252829;
+      padding: 2rem; }
+      section#contact .image .info-wrapper h2.headline {
+        font-size: 65px;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        color: white; }
+      section#contact .image .info-wrapper h3.subhead {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 0;
+        margin-bottom: 1rem; }
+        section#contact .image .info-wrapper h3.subhead span {
+          font-weight: 700; }
+      section#contact .image .info-wrapper p, section#contact .image .info-wrapper ul {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem; }
+      section#contact .image .info-wrapper ul {
+        line-height: 1.8; }
+      section#contact .image .info-wrapper .contact {
+        margin-top: 1.5rem; }
+        section#contact .image .info-wrapper .contact h5 {
+          font-size: 1rem;
+          margin-bottom: .5em; }
+        section#contact .image .info-wrapper .contact p {
+          margin-bottom: 0px;
+          margin-top: 0px;
+          line-height: 1.4; }
+
 .filler {
   height: 150vh; }
 
