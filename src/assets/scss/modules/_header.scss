@@ -1,136 +1,150 @@
 @import "../vars";
 
-.scrolled {
-  div.mini-logo {
-    // background-color: red;
-    transition: all 0.2s ease;
-    visibility: visible !important;
-    opacity: 1 !important;
+  header {
+    .left {
+      display: inline-block;
+      width: 40%;
+      text-align: right;
+    }
+    .right {
+      display: inline-block;
+      width: 40%;
+      text-align: left;
+    }
+    &.scrolled {
+      div.mini-logo {
+        // background-color: red;
+        transition: all 0.2s ease;
+        visibility: visible !important;
+        opacity: 1 !important;
+        a {
+          display: block;
+        }
+      }
+      .left {
+        transition: all 0.3s ease;
+        padding-right: 55px;
+      }
+      .right {
+        transition: all 0.3s ease;
+        padding-left: 55px;
+      }
+    }
+    div.mini-logo {
+      position: absolute;
+      z-index: 99;
+      transition: all 0.2s ease;
+      // top: 15px;
+      left: 50%;
+      width: 150px;
+      // height: 80px;
+      margin-left: -75px;
+      visibility: hidden;
+      opacity: 0;
+      // background-color: yellow;
+      height: 100%;
+      img {
+        margin-top: 15px;
+        // margin-left: -60px;
+      }
+      // a {
+      //   position: absolute;
+      //   top: 0;
+      //   bottom: 0;
+      //   right: 0;
+      //   left: 0;
+      // }
+    }
+    .right-room {
+      transition: all 0.2s ease;
+    }
+    .left-room {
+      transition: all 0.2s ease;
+    }
+
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    text-align: center;
+    // font-size: 14px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 2px 2px 3px 0px rgba(238,238,238,0.5);
+    background-color: $gold;
     a {
+      color: white;
+      text-decoration: none;
+    }
+    .menu-item {
+      display: inline-block;
+      position: relative;
+      a {
+        transition: all 0.2s ease;
+        display: inline-block;
+        padding: 2rem 1rem;
+      }
+      // a:hover {
+      //   transition: all 0.2s ease;
+      //   background-color: $gold;
+      //   color: $gray;
+      // }
+    }
+
+
+    div.mini-logo a {
+      padding-top: 0;
+      padding-bottom: 0;
+      img.mini-logo {
+        display: inline;
+        // padding-top: 1rem;
+        max-width: 90px;
+        vertical-align: middle;
+      }
+    }
+    .submenu {
+      position: absolute;
+      top: 82px;
+      left: -2.75em;
+      list-style: none;
+      background-color: $gold;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      // border: 1px solid #ccc;
+      border-top: none;
+      box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
+    }
+    .submenu.hide {
+      display: none;
+    }
+    .submenu.show {
       display: block;
     }
-  }
-  .right-room {
-    transition: all 0.3s ease;
-    padding-right: 55px;
-  }
-  .left-room {
-    transition: all 0.3s ease;
-    padding-left: 55px;
-  }
-}
-
-.site-header {
-  div.mini-logo {
-    position: absolute;
-    z-index: 99;
-    transition: all 0.2s ease;
-    // top: 15px;
-    left: 50%;
-    width: 150px;
-    // height: 80px;
-    margin-left: -75px;
-    visibility: hidden;
-    opacity: 0;
-    // background-color: yellow;
-    height: 100%;
-    img {
-      margin-top: 15px;
-      // margin-left: -60px;
-    }
-    // a {
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   right: 0;
-    //   left: 0;
+    // .trigger:hover .submenu {
+    //   display: block;
     // }
-  }
-  .right-room {
-    transition: all 0.2s ease;
-  }
-  .left-room {
-    transition: all 0.2s ease;
-  }
-}
-
-.site-header {
-  position: fixed;
-  z-index: 99;
-  left: 0;
-  right: 0;
-  text-transform: uppercase;
-  text-align: center;
-  // font-size: 14px;
-  border-bottom: 1px solid #eee;
-  box-shadow: 2px 2px 3px 0px rgba(238,238,238,0.5);
-  background-color: $gold;
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  .menu-item {
-    display: inline-block;
-    position: relative;
-    a {
-      transition: all 0.2s ease;
-      display: inline-block;
-      padding: 2rem 1rem;
+    .submenu-item {
+      display: block;
+      text-align: center;
+      width: 250px;
+      line-height: 1.6;
+      a {
+        transition: all 0.2s ease;
+        background-color: $gold;
+        color: white;
+        padding: 2rem 1.5rem;
+      }
+      a:hover {
+        transition: all 0.2s ease;
+        // background-color: $gray;
+        color: $gray;
+      }
     }
-    // a:hover {
-    //   transition: all 0.2s ease;
-    //   background-color: $gold;
-    //   color: $gray;
-    // }
+
   }
 
 
-  div.mini-logo a {
-    padding-top: 0;
-    padding-bottom: 0;
-    img.mini-logo {
-      display: inline;
-      // padding-top: 1rem;
-      max-width: 90px;
-      vertical-align: middle;
-    }
-  }
-  .submenu {
-    position: absolute;
-    top: 82px;
-    left: -3.5em;
-    list-style: none;
-    background-color: #444;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    // border: 1px solid #ccc;
-    border-top: none;
-    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
-  }
-  .submenu.hide {
-    opacity: 0;
-  }
-  .submenu.show {
-    opacity: 1;
-  }
-  // .trigger:hover .submenu {
-  //   display: block;
-  // }
-  .submenu-item {
-    display: block;
-    text-align: center;
-    width: 250px;
-    line-height: 1.6;
-    a {
-      transition: all 0.2s ease;
-      background-color: $gold;
-      color: white;
-    }
-    a:hover {
-      transition: all 0.2s ease;
-      // background-color: $gray;
-      color: $gray;
-    }
-  }
-}
+
+
+

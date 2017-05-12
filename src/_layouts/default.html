@@ -25,6 +25,22 @@
   {% endif %}
    <!-- end -->
 
+  <script type="text/javascript">
+
+  jQuery(document).ready(function( $ ) {
+      $('.remodal-close').click(function() {
+      var video01 = $("iframe").attr("src");
+      $("iframe").attr("src","");
+      $("iframe").attr("src",video01);
+      });
+    $('.remodal-wrapper').click(function() {
+      var video01 = $("iframe").attr("src");
+      $("iframe").attr("src","");
+      $("iframe").attr("src",video01);
+      });
+  });
+
+  </script>
 
   </body>
 

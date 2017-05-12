@@ -1,7 +1,9 @@
 (function() {
 
-  $('header a').smoothScroll({offset: -100});
-  $('a.arrow').smoothScroll({offset: -100});
+  $('header a').smoothScroll({offset: 0});
+  $('a.arrow').smoothScroll({offset: 0});
+  $('a.awards').smoothScroll({offset: 0});
+  $('a.arrow-up').smoothScroll({offset: 0});
 
   $(function() {
     var header = $('header');
@@ -30,8 +32,6 @@
       event.preventDefault();
     });
 
-
-
     function showSubMenu() {
       submenu.removeClass('hide');
       submenu.addClass('show');
@@ -50,9 +50,10 @@
       }
     );
 
-    // $('.submenu-item a').on("click", function(){
-    //   setTimeout(hideSubMenu, 300);
-    // });
+    $('.submenu-item a').on("click", function(){
+      setTimeout(hideSubMenu, 200);
+    });
    });
+
 
 })();

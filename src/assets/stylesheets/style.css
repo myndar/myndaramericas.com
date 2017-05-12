@@ -2719,47 +2719,310 @@ th {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-.scrolled div.mini-logo {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  visibility: visible !important;
-  opacity: 1 !important; }
-  .scrolled div.mini-logo a {
-    display: block; }
+/*
+ *  Remodal - v1.1.1
+ *  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+ *  http://vodkabears.github.io/remodal/
+ *
+ *  Made by Ilya Makarov
+ *  Under MIT License
+ */
+/* ==========================================================================
+   Remodal's necessary styles
+   ========================================================================== */
+/* Hide scroll bar */
+html.remodal-is-locked {
+  overflow: hidden;
+  touch-action: none; }
 
-.scrolled .right-room {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  padding-right: 55px; }
+/* Anti FOUC */
+.remodal,
+[data-remodal-id] {
+  display: none; }
 
-.scrolled .left-room {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  padding-left: 55px; }
+/* Necessary styles of the overlay */
+.remodal-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -5000px;
+  right: -5000px;
+  bottom: -5000px;
+  left: -5000px;
+  display: none; }
 
-.site-header div.mini-logo {
+/* Necessary styles of the wrapper */
+.remodal-wrapper {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+  text-align: center;
+  -webkit-overflow-scrolling: touch; }
+
+.remodal-wrapper:after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -0.05em;
+  content: ""; }
+
+/* Fix iPad, iPhone glitches */
+.remodal-overlay,
+.remodal-wrapper {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* Necessary styles of the modal dialog */
+.remodal {
+  position: relative;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+.remodal-is-initialized {
+  /* Disable Anti-FOUC */
+  display: inline-block; }
+
+/*
+ *  Remodal - v1.1.1
+ *  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+ *  http://vodkabears.github.io/remodal/
+ *
+ *  Made by Ilya Makarov
+ *  Under MIT License
+ */
+/* ==========================================================================
+   Remodal's default mobile first theme
+   ========================================================================== */
+/* Default theme styles for the background */
+.remodal-bg.remodal-is-opening,
+.remodal-bg.remodal-is-opened {
+  -webkit-filter: blur(3px);
+  filter: blur(3px); }
+
+/* Default theme styles of the overlay */
+.remodal-overlay {
+  background: rgba(43, 46, 56, 0.9); }
+
+.remodal-overlay.remodal-is-opening,
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.remodal-overlay.remodal-is-opening {
+  -webkit-animation-name: remodal-overlay-opening-keyframes;
+  animation-name: remodal-overlay-opening-keyframes; }
+
+.remodal-overlay.remodal-is-closing {
+  -webkit-animation-name: remodal-overlay-closing-keyframes;
+  animation-name: remodal-overlay-closing-keyframes; }
+
+/* Default theme styles of the wrapper */
+.remodal-wrapper {
+  padding: 10px 10px 0; }
+
+/* Default theme styles of the modal dialog */
+.remodal {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 75px 35px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  color: #2b2e38;
+  background: #fff; }
+
+.remodal.remodal-is-opening,
+.remodal.remodal-is-closing {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+.remodal.remodal-is-opening {
+  -webkit-animation-name: remodal-opening-keyframes;
+  animation-name: remodal-opening-keyframes; }
+
+.remodal.remodal-is-closing {
+  -webkit-animation-name: remodal-closing-keyframes;
+  animation-name: remodal-closing-keyframes; }
+
+/* Vertical align of the modal dialog */
+.remodal,
+.remodal-wrapper:after {
+  vertical-align: middle; }
+
+/* Close button */
+.remodal-close {
   position: absolute;
-  z-index: 99;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  left: 50%;
-  width: 150px;
-  margin-left: -75px;
-  visibility: hidden;
-  opacity: 0;
-  height: 100%; }
-  .site-header div.mini-logo img {
-    margin-top: 15px; }
+  top: 0;
+  left: 0;
+  display: block;
+  overflow: visible;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  text-decoration: none;
+  color: #95979c;
+  border: 0;
+  outline: 0;
+  background: transparent; }
 
-.site-header .right-room {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+.remodal-close:hover,
+.remodal-close:focus {
+  color: #2b2e38; }
 
-.site-header .left-room {
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+.remodal-close:before {
+  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+  font-size: 25px;
+  line-height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 35px;
+  content: "\00d7";
+  text-align: center; }
 
-.site-header {
+/* Dialog buttons */
+.remodal-confirm,
+.remodal-cancel {
+  font: inherit;
+  display: inline-block;
+  overflow: visible;
+  min-width: 110px;
+  margin: 0;
+  padding: 12px 0;
+  cursor: pointer;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 0;
+  outline: 0; }
+
+.remodal-confirm {
+  color: #fff;
+  background: #81c784; }
+
+.remodal-confirm:hover,
+.remodal-confirm:focus {
+  background: #66bb6a; }
+
+.remodal-cancel {
+  color: #fff;
+  background: #e57373; }
+
+.remodal-cancel:hover,
+.remodal-cancel:focus {
+  background: #ef5350; }
+
+/* Remove inner padding and border in Firefox 4+ for the button tag. */
+.remodal-confirm::-moz-focus-inner,
+.remodal-cancel::-moz-focus-inner,
+.remodal-close::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* Keyframes
+   ========================================================================== */
+@-webkit-keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0; }
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0); } }
+
+@keyframes remodal-opening-keyframes {
+  from {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0; }
+  to {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0); } }
+
+@-webkit-keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0;
+    -webkit-filter: blur(0);
+    filter: blur(0); } }
+
+@keyframes remodal-closing-keyframes {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0;
+    -webkit-filter: blur(0);
+    filter: blur(0); } }
+
+@-webkit-keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes remodal-overlay-opening-keyframes {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes remodal-overlay-closing-keyframes {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+/* Media queries
+   ========================================================================== */
+@media only screen and (min-width: 641px) {
+  .remodal {
+    max-width: 700px; } }
+
+/* IE8
+   ========================================================================== */
+.lt-ie9 .remodal-overlay {
+  background: #2b2e38; }
+
+.lt-ie9 .remodal {
+  width: 700px; }
+
+header {
   position: fixed;
   z-index: 99;
   left: 0;
@@ -2769,50 +3032,93 @@ th {
   border-bottom: 1px solid #eee;
   box-shadow: 2px 2px 3px 0px rgba(238, 238, 238, 0.5);
   background-color: #877650; }
-  .site-header a {
+  header .left {
+    display: inline-block;
+    width: 40%;
+    text-align: right; }
+  header .right {
+    display: inline-block;
+    width: 40%;
+    text-align: left; }
+  header.scrolled div.mini-logo {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    visibility: visible !important;
+    opacity: 1 !important; }
+    header.scrolled div.mini-logo a {
+      display: block; }
+  header.scrolled .left {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding-right: 55px; }
+  header.scrolled .right {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    padding-left: 55px; }
+  header div.mini-logo {
+    position: absolute;
+    z-index: 99;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    visibility: hidden;
+    opacity: 0;
+    height: 100%; }
+    header div.mini-logo img {
+      margin-top: 15px; }
+  header .right-room {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  header .left-room {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  header a {
     color: white;
     text-decoration: none; }
-  .site-header .menu-item {
+  header .menu-item {
     display: inline-block;
     position: relative; }
-    .site-header .menu-item a {
+    header .menu-item a {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
       display: inline-block;
       padding: 2rem 1rem; }
-  .site-header div.mini-logo a {
+  header div.mini-logo a {
     padding-top: 0;
     padding-bottom: 0; }
-    .site-header div.mini-logo a img.mini-logo {
+    header div.mini-logo a img.mini-logo {
       display: inline;
       max-width: 90px;
       vertical-align: middle; }
-  .site-header .submenu {
+  header .submenu {
     position: absolute;
     top: 82px;
-    left: -3.5em;
+    left: -2.75em;
     list-style: none;
-    background-color: #444;
+    background-color: #877650;
     text-align: center;
     padding: 0;
     margin: 0;
     border-top: none;
     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1); }
-  .site-header .submenu.hide {
-    opacity: 0; }
-  .site-header .submenu.show {
-    opacity: 1; }
-  .site-header .submenu-item {
+  header .submenu.hide {
+    display: none; }
+  header .submenu.show {
+    display: block; }
+  header .submenu-item {
     display: block;
     text-align: center;
     width: 250px;
     line-height: 1.6; }
-    .site-header .submenu-item a {
+    header .submenu-item a {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
       background-color: #877650;
-      color: white; }
-    .site-header .submenu-item a:hover {
+      color: white;
+      padding: 2rem 1.5rem; }
+    header .submenu-item a:hover {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
       color: #252829; }
@@ -2823,9 +3129,6 @@ html {
 
 html {
   font-family: 'Maven Pro', sans-serif; }
-
-.page-content {
-  padding-bottom: 6rem; }
 
 section#brand {
   position: relative;
@@ -2839,28 +3142,27 @@ section#brand {
           align-items: center;
   /* align vertical */
   height: 100vh;
-  background: url("/uploads/3-rings.jpg") no-repeat;
-  background-position: bottom;
-  background-size: contain;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#877650+0,ffffff+50,877650+100&0.2+0,0.2+100 */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, rgba(135, 118, 80, 0.2) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(135, 118, 80, 0.2) 100%);
+  background-image: url("/uploads/rings.png"), -webkit-linear-gradient(-45deg, rgba(135, 118, 80, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(135, 118, 80, 0.4) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-linear-gradient(315deg, rgba(135, 118, 80, 0.2) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(135, 118, 80, 0.2) 100%);
-  background: linear-gradient(135deg, rgba(135, 118, 80, 0.2) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(135, 118, 80, 0.2) 100%);
+  background-image: url("/uploads/rings.png"), -webkit-linear-gradient(315deg, rgba(135, 118, 80, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(135, 118, 80, 0.4) 100%);
+  background-image: url("/uploads/rings.png"), linear-gradient(135deg, rgba(135, 118, 80, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(135, 118, 80, 0.4) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33877650', endColorstr='#33877650',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
-
-section#arrow {
-  text-align: center;
-  margin-top: -8rem; }
-  section#arrow i {
-    margin-left: -.5rem;
-    color: #877650;
-    font-size: 4rem;
-    -webkit-animation: throb 2s infinite;
-            animation: throb 2s infinite; }
+  /* IE6-9 fallback on horizontal gradient */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  section#brand #arrow {
+    text-align: center;
+    margin-top: 5rem; }
+    section#brand #arrow i {
+      margin-left: -.5rem;
+      color: #877650;
+      font-size: 4rem;
+      -webkit-animation: throb 2s infinite;
+              animation: throb 2s infinite; }
 
 @-webkit-keyframes throb {
   0% {
@@ -2898,10 +3200,10 @@ section#arrow {
 
 .logo-wrapper {
   text-align: center;
-  margin-bottom: 4rem; }
+  margin-top: -12rem; }
 
 .logo {
-  width: 50vw;
+  width: 40vw;
   position: relative;
   z-index: 1; }
 
@@ -2921,7 +3223,11 @@ h2.intro {
   margin: 0; }
 
 section#about {
-  margin-top: 10rem; }
+  padding-top: 10rem;
+  background-image: url(/uploads/top.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: #fcf7f5; }
   section#about .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#about .image {
@@ -2936,6 +3242,21 @@ section#about {
       bottom: 0;
       width: 50%;
       background-color: rgba(255, 255, 255, 0.8); }
+    section#about .image .video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgba(255, 255, 255, 0.2); }
+      section#about .image .video .video-wrapper {
+        text-align: center;
+        margin-top: 35%;
+        color: white;
+        padding: 2rem;
+        cursor: pointer; }
+      section#about .image .video .svg {
+        width: 70px; }
     section#about .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
@@ -2957,9 +3278,30 @@ section#about {
         font-size: 18px;
         line-height: 1.6;
         margin-bottom: 1rem; }
+        section#about .image .info-wrapper p a {
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+          text-decoration: none;
+          border-bottom: none;
+          color: #877650;
+          font-weight: 500; }
+        section#about .image .info-wrapper p a:hover {
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+          border-bottom: 1px solid; }
+      section#about .image .info-wrapper p, section#about .image .info-wrapper ul {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem; }
+      section#about .image .info-wrapper ul {
+        line-height: 1.8; }
 
 section#rfid {
-  margin-top: 10rem; }
+  background-image: url(/uploads/pattern.png);
+  background-position: 120% 0;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  background-color: #fcf7f5; }
   section#rfid .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#rfid .image {
@@ -3001,7 +3343,11 @@ section#rfid {
         line-height: 1.8; }
 
 section#realtime {
-  margin-top: 10rem; }
+  background-image: url(/uploads/pattern.png);
+  background-position: -50% 0;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  background-color: #fcf7f5; }
   section#realtime .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#realtime .image {
@@ -3037,9 +3383,19 @@ section#realtime {
         font-size: 18px;
         line-height: 1.6;
         margin-bottom: 1rem; }
+      section#realtime .image .info-wrapper p, section#realtime .image .info-wrapper ul {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 1rem; }
+      section#realtime .image .info-wrapper ul {
+        line-height: 1.8; }
 
 section#visibility {
-  margin-top: 10rem; }
+  padding-top: 10rem;
+  background-image: url(/uploads/pattern.png);
+  background-position: 150% 80%;
+  background-repeat: no-repeat;
+  background-color: #fcf7f5; }
   section#visibility .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#visibility .image {
@@ -3081,7 +3437,11 @@ section#visibility {
         line-height: 1.8; }
 
 section#accuracy {
-  margin-top: 10rem; }
+  background-image: url(/uploads/pattern.png);
+  background-position: -50% 50%;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  background-color: #fcf7f5; }
   section#accuracy .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#accuracy .image {
@@ -3123,7 +3483,11 @@ section#accuracy {
         line-height: 1.8; }
 
 section#awards {
-  margin-top: 10rem; }
+  background-image: url(/uploads/pattern.png);
+  background-position: 150% 0;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  background-color: #fcf7f5; }
   section#awards .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#awards .image {
@@ -3170,13 +3534,31 @@ section#awards {
         line-height: 1.8; }
 
 section#contact {
-  margin-top: 10rem; }
+  padding-top: 10rem;
+  background-image: url(/uploads/bottom.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: #fcf7f5; }
+  section#contact #bottomarrow {
+    text-align: center;
+    padding-bottom: 5rem; }
+    section#contact #bottomarrow i {
+      margin-left: -.5rem;
+      color: #877650;
+      font-size: 4rem;
+      -webkit-animation: throb 2s infinite;
+              animation: throb 2s infinite; }
+    section#contact #bottomarrow a {
+      text-decoration: none;
+      color: #252829;
+      display: block; }
   section#contact .grid-column {
-    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
+    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8);
+    position: relative; }
   section#contact .image {
     height: 700px;
     background-size: cover;
-    position: relative; }
+    margin-bottom: 6rem; }
     section#contact .image .info {
       position: absolute;
       top: 0;
@@ -3184,16 +3566,29 @@ section#contact {
       bottom: 0;
       width: 50%;
       background-color: rgba(135, 118, 80, 0.5); }
+    section#contact .image .contact-logo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: white;
+      background-image: url(/uploads/logo-gold.png);
+      background-position: center 45%;
+      background-repeat: no-repeat;
+      background-size: 60%; }
     section#contact .image .logo-wrapper {
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       width: 50%;
-      text-align: center; }
-      section#contact .image .logo-wrapper img {
-        width: 70%;
-        margin-top: 35%; }
+      text-align: center;
+      background-color: white;
+      background-image: url(/uploads/logo-gold.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 60%; }
     section#contact .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
