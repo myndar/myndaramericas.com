@@ -164,11 +164,11 @@ section#about {
       h2.headline {
         font-size: 65px;
         margin: 0;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: $gold;
+        color: #a45e43;
       }
       h3.subhead {
         font-weight: 500;
@@ -205,9 +205,35 @@ section#about {
   }
 }
 
-section#rfid {
+section#imagine {
+  padding-top: 10rem;
   background-image: url(/uploads/pattern.png);
   background-position: 120% 0;
+  background-repeat: no-repeat;
+  background-color: #fcf7f5;
+  .grid-column {
+    // border: 1px solid rgba(150,150,150,0.6);
+    box-shadow: 3px 3px 18px 0px rgba(150,150,150,0.8);
+  }
+  .image {
+    // height: 700px;
+    // background: url('/uploads/about.jpg') no-repeat;
+    // background-size: cover;
+    position: relative;
+    .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: rgba(255,255,255,0.8);
+    }
+  }
+}
+
+section#rfid {
+  background-image: url(/uploads/pattern.png);
+  background-position: -50% 0;
   background-repeat: no-repeat;
   padding-top: 10rem;
   background-color: #fcf7f5;
@@ -234,11 +260,11 @@ section#rfid {
       h2.headline {
         font-size: 65px;
         margin: 0;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: white;
+        color: #a45e43;
       }
       h3.subhead {
         font-weight: 500;
@@ -264,7 +290,7 @@ section#rfid {
 
 section#realtime {
   background-image: url(/uploads/pattern.png);
-  background-position: -50% 0;
+  background-position: 150% 80%;
   background-repeat: no-repeat;
   padding-top: 10rem;
   background-color: #fcf7f5;
@@ -291,11 +317,17 @@ section#realtime {
       h2.headline {
         font-size: 65px;
         margin: 0;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: white;
+        color: #a45e43;
+        span {
+          display: block;
+          font-weight: 700;
+          color: $gray;
+          margin-top: .2em;
+        }
       }
       h3.subhead {
         font-weight: 500;
@@ -324,7 +356,7 @@ section#realtime {
 section#visibility {
   padding-top: 10rem;
   background-image: url(/uploads/pattern.png);
-  background-position: 150% 80%;
+  background-position: -50% 50%;
   background-repeat: no-repeat;
   background-color: #fcf7f5;
   .grid-column {
@@ -350,11 +382,17 @@ section#visibility {
       h2.headline {
         font-size: 65px;
         margin: 0;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: $gold;
+        color: #a45e43;
+        span {
+          display: block;
+          font-weight: 700;
+          color: $gray;
+          margin-top: .2em;
+        }
       }
       h3.subhead {
         font-weight: 500;
@@ -380,7 +418,7 @@ section#visibility {
 
 section#accuracy {
   background-image: url(/uploads/pattern.png);
-  background-position: -50% 50%;
+  background-position: 150% 0;
   background-repeat: no-repeat;
   padding-top: 10rem;
   background-color: #fcf7f5;
@@ -407,11 +445,17 @@ section#accuracy {
       h2.headline {
         font-size: 65px;
         margin: 0;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: $gold;
+        color: #a45e43;
+        span {
+          display: block;
+          font-weight: 700;
+          color: $gray;
+          margin-top: .2em;
+        }
       }
       h3.subhead {
         font-weight: 500;
@@ -437,7 +481,7 @@ section#accuracy {
 
 section#awards {
   background-image: url(/uploads/pattern.png);
-  background-position: 150% 0;
+  background-position: -50% 50%;
   background-repeat: no-repeat;
   padding-top: 10rem;
   background-color: #fcf7f5;
@@ -465,11 +509,11 @@ section#awards {
       h2.headline {
         font-size: 65px;
         margin: 0;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: $gold;
+        color: #a45e43;
       }
       h3.subhead {
         font-weight: 500;
@@ -567,11 +611,11 @@ section#contact {
       padding: 2rem;
       h2.headline {
         font-size: 65px;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 3rem;
-        color: white;
+        color: #a45e43;
       }
       h3.subhead {
         font-weight: 500;
