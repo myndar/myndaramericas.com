@@ -34,15 +34,41 @@ section#brand {
   align-items: center; /* align vertical */
   height: 100vh;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#877650+0,ffffff+50,877650+100&0.2+0,0.2+100 */
-  background-image: url("/uploads/rings.png"), -moz-linear-gradient(-45deg,  rgba(135,118,80,0.4) 0%, rgba(255,255,255,0.4) 50%, rgba(135,118,80,0.4) 100%); /* FF3.6-15 */
-  background-image: url("/uploads/rings.png"), -webkit-linear-gradient(-45deg,  rgba(135,118,80,0.4) 0%,rgba(255,255,255,0.4) 50%,rgba(135,118,80,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
-  background-image: url("/uploads/rings.png"), linear-gradient(135deg,  rgba(135,118,80,0.4) 0%,rgba(255,255,255,0.4) 50%,rgba(135,118,80,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-image: -moz-linear-gradient(-45deg,  rgba(135,118,80,0.4) 0%, rgba(255,255,255,0.4) 50%, rgba(135,118,80,0.4) 100%); /* FF3.6-15 */
+  background-image: -webkit-linear-gradient(-45deg,  rgba(135,118,80,0.4) 0%,rgba(255,255,255,0.4) 50%,rgba(135,118,80,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(135deg,  rgba(135,118,80,0.4) 0%,rgba(255,255,255,0.4) 50%,rgba(135,118,80,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33877650', endColorstr='#33877650',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-  // background-image;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background:
+     url(/uploads/top.png) left top no-repeat,  /* On top,    like z-index: 4; */
+     url(/uploads/bottom.png) right bottom no-repeat;   /*            like z-index: 3; */
+  // background-color: #fcf7f5;
+
+  .logo {
+    width: 40vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  h1.intro {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $gold;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: .2em
+  }
+
+  h2.intro {
+    font-weight: normal;
+    color: $gold;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+
+
   #arrow {
     text-align: center;
     margin-top: 5rem;
@@ -53,27 +79,32 @@ section#brand {
       animation: throb 2s infinite;
     }
   }
+
+  @keyframes throb {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 10px);
+              transform: translate(0, 10px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+  }
+  .image-wrapper {
+    text-align: center;
+    img {
+      max-width: 100%;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+    }
+  }
 }
 
 
-@keyframes throb {
-  0% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
-  50% {
-    -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px); }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
-
-// #brand i {
-//   position: absolute;
-//   bottom: 4rem;
-//   margin-left: -1rem;
-//   color: $light-gray;
-//   font-size: 4rem;
-// }
 
 .grid-container {
   // @include grid-visual();
@@ -85,33 +116,6 @@ section#brand {
   }
 }
 
-.logo-wrapper {
-  text-align: center;
-  margin-top: -12rem;
-}
-
-.logo {
-  width: 40vw;
-  position: relative;
-  z-index: 1;
-}
-
-h1.intro {
-  font-weight: normal;
-  text-transform: uppercase;
-  color: $gold;
-  letter-spacing: 1px;
-  display: inline-block;
-  margin-top: 1em;
-  margin-bottom: .2em
-}
-
-h2.intro {
-  font-weight: normal;
-  color: $gold;
-  letter-spacing: 1px;
-  margin: 0;
-}
 
 section#about {
   padding-top: 10rem;
