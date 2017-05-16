@@ -3274,6 +3274,8 @@ section.header-video {
     width: 65px;
     position: relative;
     margin-top: 3rem; }
+  section.header-video img.header-video__play-trigger:hover {
+    cursor: pointer; }
 
 html {
   -webkit-font-smoothing: antialiased;

@@ -200,5 +200,8 @@ section.header-video {
     position: relative;
     margin-top: 3rem
   }
+  img.header-video__play-trigger:hover {
+    cursor: pointer;
+  }
 
 }
