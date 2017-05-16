@@ -3255,6 +3255,7 @@ section.header-video {
     transform: translateY(-40%); }
   section.header-video .logo {
     width: 40vw;
+    height: auto;
     position: relative;
     z-index: 1; }
   section.header-video h1.intro {
@@ -3272,6 +3273,7 @@ section.header-video {
     margin: 0; }
   section.header-video img.header-video__play-trigger {
     width: 65px;
+    height: auto;
     position: relative;
     margin-top: 3rem; }
   section.header-video img.header-video__play-trigger:hover {
