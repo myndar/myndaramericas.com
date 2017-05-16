@@ -1,8 +1,35 @@
 ---
 layout: default
+video:
+  youtube_id: i0HxeXwHVlc
+  placeholder_image: https://unsplash.it/1440/785/?random
 ---
 
-<section id="brand">
+<section class="header-video">
+  <div class="wrapper">
+    <img
+      src="{{page.video.placeholder_image}}"
+      class="header-video__media"
+      data-video-URL="https://www.youtube.com/embed/{{page.video.youtube_id}}"
+      data-teaser=""
+      data-video-width="560"
+      data-video-height="315"
+      data-video-start=""
+      sizes="85vw"
+    >
+    <div class="header-video__close-trigger header-text-condensed" id="header-video__close-trigger">stop</div>
+    <div class="grid-container">
+      <!-- <div class="grid-collapse"> -->
+        <div class="headline header-text-condensed">
+          <p class="animated customFadeInUp">{{page.video.headline}}</p>
+          <a href="" class="header-video__play-trigger animated staggerFadeIn" id="header-video__play-trigger"><span>watch the video</span></a>
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- <section id="brand">
   <div class="grid-container">
     <div class="grid-column">
       <div class="logo-wrapper">
@@ -18,7 +45,7 @@ layout: default
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section id="about">
