@@ -3025,6 +3025,7 @@ html.remodal-is-locked {
 header {
   position: fixed;
   z-index: 99;
+  top: 0;
   left: 0;
   right: 0;
   text-transform: uppercase;
@@ -3123,10 +3124,13 @@ header {
       color: #252829; }
 
 section.header-video {
+  margin-top: 82px;
+  text-align: center;
   position: relative;
   overflow: hidden;
   clear: both;
-  min-height: 350px; }
+  min-height: 350px;
+  max-height: calc(100vh - 82px); }
   section.header-video img {
     height: 100% !important;
     position: absolute;
@@ -3143,6 +3147,8 @@ section.header-video {
     width: 100%; }
   section.header-video video {
     width: 100%; }
+  section.header-video .full-height {
+    height: 100%; }
   @media (min-width: 768px) {
     section.header-video .header-video__teaser-video {
       width: 100%;
@@ -3151,10 +3157,10 @@ section.header-video {
     section.header-video .header-video__media {
       width: 100%;
       height: auto; } }
-  section.header-video .headline p {
+  section.header-video .video-headline p {
     margin: 0; }
   @media (min-width: 300px) and (max-width: 374px) {
-    section.header-video .headline {
+    section.header-video .video-headline {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -3164,15 +3170,15 @@ section.header-video {
       letter-spacing: 2px;
       color: #FFFFFF;
       text-transform: uppercase; }
-      section.header-video .headline:hover {
+      section.header-video .video-headline:hover {
         cursor: pointer; }
-      section.header-video .headline a {
+      section.header-video .video-headline a {
         display: block;
         text-decoration: none; }
-        section.header-video .headline a:hover {
+        section.header-video .video-headline a:hover {
           background-color: transparent; } }
   @media (min-width: 375px) and (max-width: 700px) {
-    section.header-video .headline {
+    section.header-video .video-headline {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -3182,15 +3188,15 @@ section.header-video {
       letter-spacing: 2px;
       color: #FFFFFF;
       text-transform: uppercase; }
-      section.header-video .headline:hover {
+      section.header-video .video-headline:hover {
         cursor: pointer; }
-      section.header-video .headline a {
+      section.header-video .video-headline a {
         display: block;
         text-decoration: none; }
-        section.header-video .headline a:hover {
+        section.header-video .video-headline a:hover {
           background-color: transparent; } }
   @media (min-width: 701px) {
-    section.header-video .headline {
+    section.header-video .video-headline {
       position: absolute;
       top: 50%;
       -webkit-transform: translateY(-50%);
@@ -3200,15 +3206,15 @@ section.header-video {
       letter-spacing: 2px;
       color: #FFFFFF;
       text-transform: uppercase; }
-      section.header-video .headline:hover {
+      section.header-video .video-headline:hover {
         cursor: pointer; }
-      section.header-video .headline a {
+      section.header-video .video-headline a {
         display: block;
         text-decoration: none;
         padding: 0 3rem 3rem 0; }
-        section.header-video .headline a:hover {
+        section.header-video .video-headline a:hover {
           background-color: transparent; } }
-  section.header-video .headline span {
+  section.header-video .video-headline span {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     display: inline-block;
@@ -3219,7 +3225,7 @@ section.header-video {
     line-height: 1.16;
     padding-bottom: 2px;
     border-bottom: 1px solid red; }
-    section.header-video .headline span:hover {
+    section.header-video .video-headline span:hover {
       color: red;
       border-bottom: 1px solid transparent; }
   section.header-video .header-video__close-trigger {
@@ -3234,7 +3240,7 @@ section.header-video {
     line-height: 1;
     padding: .5rem 1rem;
     right: 30px;
-    top: 30px;
+    top: 60px;
     -webkit-transition: background .3s;
     transition: background .3s;
     border: none;
@@ -3242,6 +3248,32 @@ section.header-video {
   section.header-video .header-video__close-trigger:hover {
     background-color: rgba(0, 0, 0, 0.4);
     cursor: pointer; }
+  section.header-video .content-wrapper {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%); }
+  section.header-video .logo {
+    width: 40vw;
+    position: relative;
+    z-index: 1; }
+  section.header-video h1.intro {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #a45e43;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: .2em; }
+  section.header-video h2.intro {
+    font-weight: normal;
+    color: #a45e43;
+    letter-spacing: 1px;
+    margin: 0; }
+  section.header-video img.header-video__play-trigger {
+    width: 65px;
+    position: relative;
+    margin-top: 3rem; }
 
 html {
   -webkit-font-smoothing: antialiased;

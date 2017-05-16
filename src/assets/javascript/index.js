@@ -11772,7 +11772,7 @@ Kibo.prototype.lastModifiersAndKey = function() {
           headerVideo = new HeaderVideo({
             element: elem,
             media: '.header-video__media',
-            playTrigger: '.headline',
+            playTrigger: '.header-video__play-trigger',
             closeTrigger: '.header-video__close-trigger'
           });
       });

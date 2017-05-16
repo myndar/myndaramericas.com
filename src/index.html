@@ -2,11 +2,11 @@
 layout: default
 video:
   youtube_id: i0HxeXwHVlc
-  placeholder_image: https://unsplash.it/1440/785/?random
+  placeholder_image: uploads/video-still.png
 ---
 
 <section class="header-video">
-  <div class="wrapper">
+  <div class="wrapper full-height">
     <img
       src="{{page.video.placeholder_image}}"
       class="header-video__media"
@@ -18,13 +18,24 @@ video:
       sizes="85vw"
     >
     <div class="header-video__close-trigger header-text-condensed" id="header-video__close-trigger">stop</div>
-    <div class="grid-container">
-      <!-- <div class="grid-collapse"> -->
-        <div class="headline header-text-condensed">
+    <div class="grid-container full-height">
+      <div class="grid-column full-height">
+        <!-- <div class="video-headline header-text-condensed">
           <p class="animated customFadeInUp">{{page.video.headline}}</p>
           <a href="" class="header-video__play-trigger animated staggerFadeIn" id="header-video__play-trigger"><span>watch the video</span></a>
+        </div> -->
+        <div class="content-wrapper">
+          <div class="logo-wrapper">
+            <img class="logo" src="/uploads/logo-simple.png" alt="">
+          </div>
+          <h1 class="intro logo-trigger">Introducing Myndar Americas</h1>
+          <h2 class="intro">RFID solutions designed for the jewelry industry.</h2>
+          <div class="button-wrapper">
+            <img class="header-video__play-trigger animated staggerFadeIn" id="header-video__play-trigger" src="/uploads/play.svg" alt="">
+          </div>
         </div>
-      <!-- </div> -->
+
+      </div>
     </div>
   </div>
 </section>
@@ -75,13 +86,13 @@ video:
   </div>
 </section>
 
-<section id="imagine">
+<!-- <section id="imagine">
   <div class="grid-container">
     <div class="grid-column image">
       <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/i0HxeXwHVlc' frameborder='0' allowfullscreen></iframe></div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- <div class="remodal" data-remodal-id="modal">
   <button data-remodal-action="close" class="remodal-close"></button>
