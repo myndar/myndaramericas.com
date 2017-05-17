@@ -1,9 +1,10 @@
 (function() {
 
   $('header a').smoothScroll({offset: 0});
+  $('header a.video').smoothScroll({offset: -82});
   $('a.arrow').smoothScroll({offset: 0});
   $('a.awards').smoothScroll({offset: 0});
-  $('a.arrow-up').smoothScroll({offset: 0});
+  $('a.arrow-up').smoothScroll({offset: -82});
 
   $(function() {
     var header = $('header');
@@ -148,6 +149,29 @@
             playTrigger: '.header-video__play-trigger',
             closeTrigger: '.header-video__close-trigger'
           });
+      });
+
+      var $webContact = $('#contactform');
+      $webContact.submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+         url: 'https://formspree.io/myndar@ryandeussing.com',
+         method: 'POST',
+         data: $(this).serialize(),
+         dataType: 'json',
+         beforeSend: function() {
+           $webContact.append('<div class="alert alert--loading">Sending...</div>');
+         },
+         success: function(data) {
+           $webContact.find('.alert--loading').hide();
+           $webContact.find('button[type=submit]').prop('disabled', true);
+           $webContact.append('<div class="alert alert--success">Thank you, we\'ll get back to you right away.</div>');
+         },
+         error: function(err) {
+           $webContact.find('.alert--loading').hide();
+           $webContact.append('<div class="alert alert--error">Oops, there was an error. Try again?</div>');
+         }
+       });
       });
 
 

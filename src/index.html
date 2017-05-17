@@ -9,7 +9,7 @@ video:
   <div class="wrapper full-height">
     <img
       src="{{page.video.placeholder_image}}"
-      class="header-video__media"
+      class="header-video__media background"
       data-video-URL="https://www.youtube.com/embed/{{page.video.youtube_id}}"
       data-teaser=""
       data-video-width="560"
@@ -203,24 +203,28 @@ video:
         <div class="info-wrapper">
           <h2 class="headline">Contact Us</h2>
           <div class="contact">
-            <h5>Retail Solutions &amp; Sales</h5>
-            <p>Eric Zuckerman</p>
-            <p>President, Myndar Americas</p>
-            <p>ez@pacteamamerica.com</p>
-            <p>201 599 5000</p>
-          </div>
-          <div class="contact">
-            <h5>Retail Solutions &amp; Sales</h5>
-            <p>Mike McElduff</p>
-            <p>Business Development</p>
-            <p>mm@pacteamamerica.com</p>
-            <p>973 768 5314</p>
-          </div>
-          <div class="contact">
-            <h5>Marketing &amp; Press</h5>
-            <p>Fran Pennella</p>
-            <p>fran@benaliconsulting.com</p>
-            <p>203 613 8848</p>
+            <h5>Myndar Americas</h5>
+            <p>800 867 5309</p>
+            <p><a href="info@myndaramercias.com">info@myndaramercias.com</a></p>
+            <form id="contactform" class="pure-form pure-form-aligned">
+              <fieldset>
+                <div class="pure-control-group">
+                  <input required class="" placeholder=NAME name=name value="" id=name>
+                </div>
+                <div class="pure-control-group">
+                  <input required class="" placeholder=PHONE name=phone value="" id=phone>
+                </div>
+                <div class="pure-control-group">
+                  <input required class="" placeholder=EMAIL name=email value="" id=email-address>
+                </div>
+                <div class="pure-control-group">
+                  <textarea required class="" placeholder=MESSAGE type=text name=message value="" id=message></textarea>
+                </div>
+                <div class="send pure-control-group">
+                  <button id="send-button" class="pure-button" type=submit>SEND</button>
+                </div>
+                <input class=is-hidden name=_gotcha>
+                <input id=_subject type=hidden name=_subject value="Website Contact"></fieldset></form>
           </div>
         </div>
       </div>
@@ -232,7 +236,7 @@ video:
     </div>
   </div>
   <div id="bottomarrow">
-    <a class="arrow-up" href="#brand">
+    <a class="arrow-up" href="#video">
       <i class="fa fa-caret-up throb infinite" aria-hidden="true"></i>
       <p>BACK TO TOP</p>
     </a>
