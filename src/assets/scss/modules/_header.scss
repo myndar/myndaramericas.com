@@ -1,65 +1,41 @@
 @import "../vars";
 
   header {
-    .left {
+    .header-wrapper {
+      transition: all 0.3s ease;
       display: inline-block;
-      width: 40%;
-      text-align: right;
+      margin-left: -100px;
     }
-    .right {
-      display: inline-block;
-      width: 40%;
-      text-align: left;
-    }
+
     &.scrolled {
+      .header-wrapper {
+        transition: all 0.3s ease;
+        margin-left: 0px;
+      }
       div.mini-logo {
-        // background-color: red;
-        transition: all 0.2s ease;
+        transition: all 0.3s ease;
         visibility: visible !important;
         opacity: 1 !important;
         a {
           display: block;
+          padding: 0;
         }
-      }
-      .left {
-        transition: all 0.3s ease;
-        padding-right: 55px;
-      }
-      .right {
-        transition: all 0.3s ease;
-        padding-left: 55px;
       }
     }
     div.mini-logo {
-      position: absolute;
-      z-index: 99;
-      transition: all 0.2s ease;
-      // top: 15px;
-      left: 50%;
-      width: 150px;
-      // height: 80px;
-      margin-left: -75px;
+      transition: all 0.3s ease;
       visibility: hidden;
       opacity: 0;
-      // background-color: yellow;
       height: 100%;
-      img {
-        margin-top: 15px;
-        // margin-left: -60px;
+      a {
+        display: block;
+        padding: 0;
       }
-      // a {
-      //   position: absolute;
-      //   top: 0;
-      //   bottom: 0;
-      //   right: 0;
-      //   left: 0;
-      // }
-    }
-    .right-room {
-      transition: all 0.2s ease;
-    }
-    .left-room {
-      transition: all 0.2s ease;
+      img.mini-logo {
+        display: inline;
+        max-width: 90px;
+        vertical-align: middle;
+      }
     }
 
     position: fixed;
@@ -92,17 +68,6 @@
       // }
     }
 
-
-    div.mini-logo a {
-      padding-top: 0;
-      padding-bottom: 0;
-      img.mini-logo {
-        display: inline;
-        // padding-top: 1rem;
-        max-width: 90px;
-        vertical-align: middle;
-      }
-    }
     .submenu {
       position: absolute;
       top: 82px;

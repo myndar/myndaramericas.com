@@ -155,7 +155,7 @@
       $webContact.submit(function(e) {
         e.preventDefault();
         $.ajax({
-         url: 'https://formspree.io/myndar@ryandeussing.com',
+         url: 'https://formspree.io/info@myndaramericas.com',
          method: 'POST',
          data: $(this).serialize(),
          dataType: 'json',

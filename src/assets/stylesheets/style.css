@@ -3032,48 +3032,36 @@ header {
   text-align: center;
   box-shadow: 2px 2px 3px 0px rgba(37, 40, 42, 0.5);
   background-color: #877650; }
-  header .left {
+  header .header-wrapper {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     display: inline-block;
-    width: 40%;
-    text-align: right; }
-  header .right {
-    display: inline-block;
-    width: 40%;
-    text-align: left; }
+    margin-left: -100px; }
+  header.scrolled .header-wrapper {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-left: 0px; }
   header.scrolled div.mini-logo {
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     visibility: visible !important;
     opacity: 1 !important; }
     header.scrolled div.mini-logo a {
-      display: block; }
-  header.scrolled .left {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    padding-right: 55px; }
-  header.scrolled .right {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    padding-left: 55px; }
+      display: block;
+      padding: 0; }
   header div.mini-logo {
-    position: absolute;
-    z-index: 99;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    left: 50%;
-    width: 150px;
-    margin-left: -75px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     visibility: hidden;
     opacity: 0;
     height: 100%; }
-    header div.mini-logo img {
-      margin-top: 15px; }
-  header .right-room {
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-  header .left-room {
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
+    header div.mini-logo a {
+      display: block;
+      padding: 0; }
+    header div.mini-logo img.mini-logo {
+      display: inline;
+      max-width: 90px;
+      vertical-align: middle; }
   header a {
     color: white;
     text-decoration: none; }
@@ -3085,13 +3073,6 @@ header {
       transition: all 0.2s ease;
       display: inline-block;
       padding: 2rem 1rem; }
-  header div.mini-logo a {
-    padding-top: 0;
-    padding-bottom: 0; }
-    header div.mini-logo a img.mini-logo {
-      display: inline;
-      max-width: 90px;
-      vertical-align: middle; }
   header .submenu {
     position: absolute;
     top: 82px;
@@ -3856,10 +3837,10 @@ section#contact {
 
 .pure-form input:not([type]):focus, .pure-form input[type=text]:focus, .pure-form input[type=number]:focus, .pure-form input[type=search]:focus, .pure-form input[type=tel]:focus, .pure-form input[type=color]:focus, .pure-form input[type=password]:focus, .pure-form input[type=email]:focus, .pure-form input[type=url]:focus, .pure-form input[type=date]:focus, .pure-form input[type=month]:focus, .pure-form input[type=time]:focus, .pure-form input[type=datetime]:focus, .pure-form input[type=datetime-local]:focus, .pure-form input[type=week]:focus, .pure-form select:focus, .pure-form textarea:focus {
   outline: 0;
-  border-color: #129FEA; }
+  border-color: #efefef; }
 
 .pure-form input[type=file]:focus, .pure-form input[type=radio]:focus, .pure-form input[type=checkbox]:focus {
-  outline: #129FEA auto 1px; }
+  outline: #efefef auto 1px; }
 
 .pure-form .pure-checkbox, .pure-form .pure-radio {
   margin: .5em 0;
@@ -3876,11 +3857,11 @@ section#contact {
   border-color: #ccc; }
 
 .pure-form input:focus:invalid, .pure-form select:focus:invalid, .pure-form textarea:focus:invalid {
-  color: #b94a48;
-  border-color: #e9322d; }
+  color: #efefef;
+  border-color: #efefef; }
 
 .pure-form input[type=file]:focus:invalid:focus, .pure-form input[type=radio]:focus:invalid:focus, .pure-form input[type=checkbox]:focus:invalid:focus {
-  outline-color: #e9322d; }
+  outline-color: #efefef; }
 
 .pure-form select {
   height: 2.25em;
@@ -4098,5 +4079,17 @@ section#contact {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   border-right: none; }
+
+:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+:focus::-moz-placeholder {
+  color: transparent; }
+
+:focus:-moz-placeholder {
+  color: transparent; }
+
+:focus:-ms-input-placeholder {
+  color: transparent; }
 
 /*# sourceMappingURL=style.css.map */
