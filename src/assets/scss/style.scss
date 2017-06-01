@@ -181,7 +181,7 @@ section#about {
       }
       p {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem;
         a {
           transition: all 0.2s ease;
@@ -197,11 +197,11 @@ section#about {
       }
       p, ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem;
       }
       ul {
-        line-height: 1.8;
+        line-height: 1.4;
       }
     }
   }
@@ -255,11 +255,11 @@ section#rfid {
       }
       p, ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem;
       }
       ul {
-        line-height: 1.8;
+        line-height: 1.4;
       }
     }
   }
@@ -286,7 +286,7 @@ section#rfid {
 //   }
 // }
 
-section#realtime {
+section#inventory {
   background-image: url(/uploads/pattern-2000.png);
   background-position: -60% 25%;
   background-repeat: no-repeat;
@@ -298,13 +298,13 @@ section#realtime {
   }
   .image {
     height: 700px;
-    background: url('/uploads/scanner.jpg') no-repeat;
+    background: url('/uploads/scanner-2.jpg') no-repeat;
     background-size: cover;
     position: relative;
     .info {
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0;
       bottom: 0;
       width: 50%;
       background-color: rgba(255, 255, 255, 0.8);
@@ -336,16 +336,16 @@ section#realtime {
       }
       p {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem;
       }
       p, ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem;
       }
       ul {
-        line-height: 1.8;
+        line-height: 1.4;
       }
     }
   }
@@ -363,13 +363,13 @@ section#visibility {
   }
   .image {
     height: 700px;
-    background: url('/uploads/mtray.jpg') no-repeat;
+    background: url('/uploads/mtray-2.jpg') no-repeat;
     background-size: cover;
     position: relative;
     .info {
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       bottom: 0;
       width: 50%;
       background-color: rgba(255,255,255,0.8);
@@ -404,17 +404,17 @@ section#visibility {
       }
       p, ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem;
       }
       ul {
-        line-height: 1.8;
+        line-height: 1.4;
       }
     }
   }
 }
 
-section#accuracy {
+section#data {
   background-image: url(/uploads/pattern-2000.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -467,11 +467,14 @@ section#accuracy {
       }
       p, ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem;
+        span {
+          font-weight: 700;
+        }
       }
       ul {
-        line-height: 1.8;
+        line-height: 1.4;
       }
     }
   }
@@ -531,11 +534,11 @@ section#awards {
       }
       p, ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem;
       }
       ul {
-        line-height: 1.8;
+        line-height: 1.4;
       }
     }
   }
@@ -627,11 +630,11 @@ section#contact {
       }
       p, ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem;
       }
       ul {
-        line-height: 1.8;
+        line-height: 1.4;
       }
       .contact {
         margin-top: 1.5rem;

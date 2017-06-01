@@ -3412,7 +3412,7 @@ section#about {
         margin-bottom: 1rem; }
       section#about .image .info-wrapper p {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem; }
         section#about .image .info-wrapper p a {
           -webkit-transition: all 0.2s ease;
@@ -3427,10 +3427,10 @@ section#about {
           border-bottom: 1px solid; }
       section#about .image .info-wrapper p, section#about .image .info-wrapper ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem; }
       section#about .image .info-wrapper ul {
-        line-height: 1.8; }
+        line-height: 1.4; }
 
 section#rfid {
   background-image: url(/uploads/pattern-2.png);
@@ -3472,34 +3472,34 @@ section#rfid {
           font-weight: 700; }
       section#rfid .image .info-wrapper p, section#rfid .image .info-wrapper ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem; }
       section#rfid .image .info-wrapper ul {
-        line-height: 1.8; }
+        line-height: 1.4; }
 
-section#realtime {
+section#inventory {
   background-image: url(/uploads/pattern-2000.png);
   background-position: -60% 25%;
   background-repeat: no-repeat;
   padding-top: 10rem; }
-  section#realtime .grid-column {
+  section#inventory .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
-  section#realtime .image {
+  section#inventory .image {
     height: 700px;
-    background: url("/uploads/scanner.jpg") no-repeat;
+    background: url("/uploads/scanner-2.jpg") no-repeat;
     background-size: cover;
     position: relative; }
-    section#realtime .image .info {
+    section#inventory .image .info {
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0;
       bottom: 0;
       width: 50%;
       background-color: rgba(255, 255, 255, 0.8); }
-    section#realtime .image .info-wrapper {
+    section#inventory .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
-      section#realtime .image .info-wrapper h2.headline {
+      section#inventory .image .info-wrapper h2.headline {
         font-size: 65px;
         margin: 0;
         font-weight: 700;
@@ -3507,27 +3507,27 @@ section#realtime {
         margin-top: 0;
         margin-bottom: 1rem;
         color: #877650; }
-        section#realtime .image .info-wrapper h2.headline span {
+        section#inventory .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
           color: #252829;
           margin-top: .2em; }
-      section#realtime .image .info-wrapper h3.subhead {
+      section#inventory .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
-      section#realtime .image .info-wrapper p {
+      section#inventory .image .info-wrapper p {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem; }
-      section#realtime .image .info-wrapper p, section#realtime .image .info-wrapper ul {
+      section#inventory .image .info-wrapper p, section#inventory .image .info-wrapper ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem; }
-      section#realtime .image .info-wrapper ul {
-        line-height: 1.8; }
+      section#inventory .image .info-wrapper ul {
+        line-height: 1.4; }
 
 section#visibility {
   padding-top: 10rem;
@@ -3538,13 +3538,13 @@ section#visibility {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#visibility .image {
     height: 700px;
-    background: url("/uploads/mtray.jpg") no-repeat;
+    background: url("/uploads/mtray-2.jpg") no-repeat;
     background-size: cover;
     position: relative; }
     section#visibility .image .info {
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       bottom: 0;
       width: 50%;
       background-color: rgba(255, 255, 255, 0.8); }
@@ -3574,34 +3574,34 @@ section#visibility {
           font-weight: 700; }
       section#visibility .image .info-wrapper p, section#visibility .image .info-wrapper ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem; }
       section#visibility .image .info-wrapper ul {
-        line-height: 1.8; }
+        line-height: 1.4; }
 
-section#accuracy {
+section#data {
   background-image: url(/uploads/pattern-2000.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding-top: 10rem; }
-  section#accuracy .grid-column {
+  section#data .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
-  section#accuracy .image {
+  section#data .image {
     height: 700px;
     background: url("/uploads/mlog.jpg") no-repeat;
     background-size: cover;
     position: relative; }
-    section#accuracy .image .info {
+    section#data .image .info {
       position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
       width: 50%;
       background-color: rgba(255, 255, 255, 0.8); }
-    section#accuracy .image .info-wrapper {
+    section#data .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
-      section#accuracy .image .info-wrapper h2.headline {
+      section#data .image .info-wrapper h2.headline {
         font-size: 65px;
         margin: 0;
         font-weight: 700;
@@ -3609,25 +3609,27 @@ section#accuracy {
         margin-top: 0;
         margin-bottom: 1rem;
         color: #877650; }
-        section#accuracy .image .info-wrapper h2.headline span {
+        section#data .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
           color: #252829;
           margin-top: .2em; }
-      section#accuracy .image .info-wrapper h3.subhead {
+      section#data .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
-        section#accuracy .image .info-wrapper h3.subhead span {
+        section#data .image .info-wrapper h3.subhead span {
           font-weight: 700; }
-      section#accuracy .image .info-wrapper p, section#accuracy .image .info-wrapper ul {
+      section#data .image .info-wrapper p, section#data .image .info-wrapper ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem; }
-      section#accuracy .image .info-wrapper ul {
-        line-height: 1.8; }
+        section#data .image .info-wrapper p span, section#data .image .info-wrapper ul span {
+          font-weight: 700; }
+      section#data .image .info-wrapper ul {
+        line-height: 1.4; }
 
 section#awards {
   background-image: url(/uploads/pattern-2000.png);
@@ -3674,10 +3676,10 @@ section#awards {
         font-weight: 500; }
       section#awards .image .info-wrapper p, section#awards .image .info-wrapper ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem; }
       section#awards .image .info-wrapper ul {
-        line-height: 1.8; }
+        line-height: 1.4; }
 
 section#contact {
   padding-top: 10rem;
@@ -3754,10 +3756,10 @@ section#contact {
           font-weight: 700; }
       section#contact .image .info-wrapper p, section#contact .image .info-wrapper ul {
         font-size: 18px;
-        line-height: 1.6;
+        line-height: 1.4;
         margin-bottom: 1rem; }
       section#contact .image .info-wrapper ul {
-        line-height: 1.8; }
+        line-height: 1.4; }
       section#contact .image .info-wrapper .contact {
         margin-top: 1.5rem; }
         section#contact .image .info-wrapper .contact h5 {
