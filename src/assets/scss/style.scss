@@ -41,10 +41,10 @@ section#brand {
   background-image: linear-gradient(135deg,  rgba(135,118,80,0.4) 0%,rgba(255,255,255,0.4) 50%,rgba(135,118,80,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33877650', endColorstr='#33877650',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-  background:
-     url(/uploads/top.png) left top no-repeat,  /* On top,    like z-index: 4; */
-     url(/uploads/bottom.png) right bottom no-repeat;   /*            like z-index: 3; */
-  // background-color: #fcf7f5;
+  // background:
+  //    url(/uploads/top.png) left top no-repeat,
+  //    url(/uploads/bottom.png) right bottom no-repeat;
+  background-color: #fcf7f5;
 
   .logo {
     width: 40vw;
@@ -121,10 +121,10 @@ section#brand {
 
 section#about {
   padding-top: 10rem;
-  background-image: url(/uploads/top.png);
-  background-position: 0 0;
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: 150% 50%;
   background-repeat: no-repeat;
-  background-color: #fcf7f5;
+  // background-color: #fcf7f5;
   .grid-column {
     // border: 1px solid rgba(150,150,150,0.6);
     box-shadow: 3px 3px 18px 0px rgba(150,150,150,0.8);
@@ -170,7 +170,7 @@ section#about {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43;
+        color: $gold;
       }
       h3.subhead {
         font-weight: 500;
@@ -207,38 +207,13 @@ section#about {
   }
 }
 
-section#imagine {
-  padding-top: 10rem;
-  background-image: url(/uploads/pattern.png);
-  background-position: 120% 0;
-  background-repeat: no-repeat;
-  background-color: #fcf7f5;
-  .grid-column {
-    // border: 1px solid rgba(150,150,150,0.6);
-    box-shadow: 3px 3px 18px 0px rgba(150,150,150,0.8);
-  }
-  .image {
-    // height: 700px;
-    // background: url('/uploads/about.jpg') no-repeat;
-    // background-size: cover;
-    position: relative;
-    .info {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 50%;
-      background-color: rgba(255,255,255,0.8);
-    }
-  }
-}
-
 section#rfid {
-  background-image: url(/uploads/pattern.png);
-  background-position: -50% 0;
+  background-image: url(/uploads/pattern-2.png);
+  background-position: 50% 50%;
+  // background-size: contain;
   background-repeat: no-repeat;
   padding-top: 10rem;
-  background-color: #fcf7f5;
+  // background-color: #fcf7f5;
   .grid-column {
     // border: 1px solid rgba(150,150,150,0.6);
     box-shadow: 3px 3px 18px 0px rgba(150,150,150,0.8);
@@ -266,7 +241,7 @@ section#rfid {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43;
+        color: white;
       }
       h3.subhead {
         font-weight: 500;
@@ -290,19 +265,40 @@ section#rfid {
   }
 }
 
+// section#imagine {
+//   padding-top: 10rem;
+//   background-image: url(/uploads/pattern-2000.png);
+//   background-position: 50% 50%;
+//   background-repeat: no-repeat;
+//   .grid-column {
+//     box-shadow: 3px 3px 18px 0px rgba(150,150,150,0.8);
+//   }
+//   .image {
+//     position: relative;
+//     .info {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       bottom: 0;
+//       width: 50%;
+//       background-color: rgba(255,255,255,0.8);
+//     }
+//   }
+// }
+
 section#realtime {
-  background-image: url(/uploads/pattern.png);
-  background-position: 150% 80%;
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: -60% 25%;
   background-repeat: no-repeat;
   padding-top: 10rem;
-  background-color: #fcf7f5;
+  // background-color: #fcf7f5;
   .grid-column {
     // border: 1px solid rgba(150,150,150,0.6);
     box-shadow: 3px 3px 18px 0px rgba(150,150,150,0.8);
   }
   .image {
     height: 700px;
-    background: url('/uploads/mhand.jpg') no-repeat;
+    background: url('/uploads/scanner.jpg') no-repeat;
     background-size: cover;
     position: relative;
     .info {
@@ -311,7 +307,7 @@ section#realtime {
       left: 0;
       bottom: 0;
       width: 50%;
-      background-color: rgba(135, 118, 80, 0.5);
+      background-color: rgba(255, 255, 255, 0.8);
     }
     .info-wrapper {
       color: $gray;
@@ -323,7 +319,7 @@ section#realtime {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43;
+        color: $gold;
         span {
           display: block;
           font-weight: 700;
@@ -357,10 +353,10 @@ section#realtime {
 
 section#visibility {
   padding-top: 10rem;
-  background-image: url(/uploads/pattern.png);
-  background-position: -50% 50%;
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: 150% 30%;
   background-repeat: no-repeat;
-  background-color: #fcf7f5;
+  // background-color: #fcf7f5;
   .grid-column {
     // border: 1px solid rgba(150,150,150,0.6);
     box-shadow: 3px 3px 18px 0px rgba(150,150,150,0.8);
@@ -388,7 +384,7 @@ section#visibility {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43;
+        color: $gold;
         span {
           display: block;
           font-weight: 700;
@@ -419,11 +415,11 @@ section#visibility {
 }
 
 section#accuracy {
-  background-image: url(/uploads/pattern.png);
-  background-position: 150% 0;
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   padding-top: 10rem;
-  background-color: #fcf7f5;
+  // background-color: #fcf7f5;
   .grid-column {
     // border: 1px solid rgba(150,150,150,0.6);
     box-shadow: 3px 3px 18px 0px rgba(150,150,150,0.8);
@@ -451,7 +447,7 @@ section#accuracy {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43;
+        color: $gold;
         span {
           display: block;
           font-weight: 700;
@@ -482,11 +478,11 @@ section#accuracy {
 }
 
 section#awards {
-  background-image: url(/uploads/pattern.png);
-  background-position: -50% 50%;
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: -60% 25%;
   background-repeat: no-repeat;
   padding-top: 10rem;
-  background-color: #fcf7f5;
+  // background-color: #fcf7f5;
   .grid-column {
     // border: 1px solid rgba(150,150,150,0.6);
     box-shadow: 3px 3px 18px 0px rgba(150,150,150,0.8);
@@ -515,7 +511,7 @@ section#awards {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43;
+        color: $gold;
       }
       h3.subhead {
         font-weight: 500;
@@ -547,10 +543,10 @@ section#awards {
 
 section#contact {
   padding-top: 10rem;
-  background-image: url(/uploads/bottom.png);
-  background-position: right bottom;
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: right top;
   background-repeat: no-repeat;
-  background-color: #fcf7f5;
+  // background-color: #fcf7f5;
   #bottomarrow {
     text-align: center;
     padding-bottom: 5rem;
@@ -617,7 +613,7 @@ section#contact {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 3rem;
-        color: #a45e43;
+        color: white;
       }
       h3.subhead {
         font-weight: 500;

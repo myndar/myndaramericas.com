@@ -3288,8 +3288,7 @@ section#brand {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33877650', endColorstr='#33877650',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
-  background: url(/uploads/top.png) left top no-repeat, url(/uploads/bottom.png) right bottom no-repeat;
-  /*            like z-index: 3; */ }
+  background-color: #fcf7f5; }
   section#brand .logo {
     width: 40vw;
     position: relative;
@@ -3362,10 +3361,9 @@ section#brand {
 
 section#about {
   padding-top: 10rem;
-  background-image: url(/uploads/top.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-color: #fcf7f5; }
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: 150% 50%;
+  background-repeat: no-repeat; }
   section#about .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#about .image {
@@ -3405,7 +3403,7 @@ section#about {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43; }
+        color: #877650; }
       section#about .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
@@ -3434,30 +3432,11 @@ section#about {
       section#about .image .info-wrapper ul {
         line-height: 1.8; }
 
-section#imagine {
-  padding-top: 10rem;
-  background-image: url(/uploads/pattern.png);
-  background-position: 120% 0;
-  background-repeat: no-repeat;
-  background-color: #fcf7f5; }
-  section#imagine .grid-column {
-    box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
-  section#imagine .image {
-    position: relative; }
-    section#imagine .image .info {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 50%;
-      background-color: rgba(255, 255, 255, 0.8); }
-
 section#rfid {
-  background-image: url(/uploads/pattern.png);
-  background-position: -50% 0;
+  background-image: url(/uploads/pattern-2.png);
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  padding-top: 10rem;
-  background-color: #fcf7f5; }
+  padding-top: 10rem; }
   section#rfid .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#rfid .image {
@@ -3482,7 +3461,7 @@ section#rfid {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43; }
+        color: white; }
       section#rfid .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
@@ -3499,16 +3478,15 @@ section#rfid {
         line-height: 1.8; }
 
 section#realtime {
-  background-image: url(/uploads/pattern.png);
-  background-position: 150% 80%;
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: -60% 25%;
   background-repeat: no-repeat;
-  padding-top: 10rem;
-  background-color: #fcf7f5; }
+  padding-top: 10rem; }
   section#realtime .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#realtime .image {
     height: 700px;
-    background: url("/uploads/mhand.jpg") no-repeat;
+    background: url("/uploads/scanner.jpg") no-repeat;
     background-size: cover;
     position: relative; }
     section#realtime .image .info {
@@ -3517,7 +3495,7 @@ section#realtime {
       left: 0;
       bottom: 0;
       width: 50%;
-      background-color: rgba(135, 118, 80, 0.5); }
+      background-color: rgba(255, 255, 255, 0.8); }
     section#realtime .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
@@ -3528,7 +3506,7 @@ section#realtime {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43; }
+        color: #877650; }
         section#realtime .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
@@ -3553,10 +3531,9 @@ section#realtime {
 
 section#visibility {
   padding-top: 10rem;
-  background-image: url(/uploads/pattern.png);
-  background-position: -50% 50%;
-  background-repeat: no-repeat;
-  background-color: #fcf7f5; }
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: 150% 30%;
+  background-repeat: no-repeat; }
   section#visibility .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#visibility .image {
@@ -3581,7 +3558,7 @@ section#visibility {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43; }
+        color: #877650; }
         section#visibility .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
@@ -3603,11 +3580,10 @@ section#visibility {
         line-height: 1.8; }
 
 section#accuracy {
-  background-image: url(/uploads/pattern.png);
-  background-position: 150% 0;
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  padding-top: 10rem;
-  background-color: #fcf7f5; }
+  padding-top: 10rem; }
   section#accuracy .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#accuracy .image {
@@ -3632,7 +3608,7 @@ section#accuracy {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43; }
+        color: #877650; }
         section#accuracy .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
@@ -3654,11 +3630,10 @@ section#accuracy {
         line-height: 1.8; }
 
 section#awards {
-  background-image: url(/uploads/pattern.png);
-  background-position: -50% 50%;
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: -60% 25%;
   background-repeat: no-repeat;
-  padding-top: 10rem;
-  background-color: #fcf7f5; }
+  padding-top: 10rem; }
   section#awards .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#awards .image {
@@ -3684,7 +3659,7 @@ section#awards {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: #a45e43; }
+        color: #877650; }
       section#awards .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
@@ -3706,10 +3681,9 @@ section#awards {
 
 section#contact {
   padding-top: 10rem;
-  background-image: url(/uploads/bottom.png);
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-color: #fcf7f5; }
+  background-image: url(/uploads/pattern-2000.png);
+  background-position: right top;
+  background-repeat: no-repeat; }
   section#contact #bottomarrow {
     text-align: center;
     padding-bottom: 5rem; }
@@ -3769,7 +3743,7 @@ section#contact {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 3rem;
-        color: #a45e43; }
+        color: white; }
       section#contact .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
