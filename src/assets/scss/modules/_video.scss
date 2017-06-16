@@ -1,5 +1,5 @@
 section.header-video {
-  margin-top: 82px;
+  // margin-top: 82px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -173,7 +173,12 @@ section.header-video {
 
   // styles from #brand
   .logo {
-    width: 40vw;
+    @include breakpoint(768px) {
+      width: 40vw;
+      margin-top: 0;
+    }
+    width: 30vw;
+    margin-top: 1rem;
     height: auto;
     position: relative;
     z-index: 1;
@@ -185,15 +190,25 @@ section.header-video {
     color: #a45e43;
     letter-spacing: 1px;
     display: inline-block;
-    margin-top: 1em;
-    margin-bottom: .2em
+    font-size: 1.5rem;
+    margin-top: .5em;
+    @include breakpoint(768px) {
+      font-size: 2rem;
+      margin-top: 1em;
+      margin-bottom: .2em
+    }
+
   }
 
   h2.intro {
+    font-size: 1rem;
     font-weight: normal;
     color: #a45e43;
     letter-spacing: 1px;
     margin: 0;
+    @include breakpoint(768px) {
+      font-size: 1.5rem;
+    }
   }
 
   img.header-video__play-trigger {

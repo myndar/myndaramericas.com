@@ -5,12 +5,12 @@
   enquire.register("screen and (min-width:768px)", {
     match : function() {
       $(function() {
-        var header = $('header');
         $(window).scroll(function() {
+          var header = $('header');
+          var headerHeight = header.height();
           var scroll = $(window).scrollTop();
-          var siteHeader = $('.site-header').height();
           var offset = $('.logo-trigger').offset().top;
-          var trigger = (offset - siteHeader);
+          var trigger = (offset - headerHeight);
           // var arrow = $('a.arrow');
 
           if (scroll >= trigger) { // check the offset top
@@ -21,6 +21,7 @@
             // arrow.css('visibility', 'visible')
           }
         });
+
       });
     },
     unmatch : function() {
@@ -32,6 +33,7 @@
 
   // document ready
   $(function() {
+    setVideoMargin();
     // smoothscroll
     var headerHeight = $('header').height();
     $('header a').smoothScroll({offset: 0});
@@ -57,6 +59,7 @@
     window.onresize = function(){
       // actual resize? http://tinyurl.com/qaoajzu
       if ($(window).width() != windowWidth) {
+        setTimeout(setVideoMargin, 400);
         // dropdown menu position
         var headerHeight = $('header').height();
         var subMenu = $('.submenu');
@@ -64,6 +67,7 @@
       }
     }
     $(window).on("orientationchange",function(){
+      setTimeout(setVideoMargin, 400);
       // dropdown menu position
       var setDropDownPosition = function() {
         var headerHeight = $('header').height();
@@ -194,6 +198,15 @@
          }
        });
       });
+
+      var setVideoMargin = function() {
+        // set video top margin
+        var header = $('header');
+        var headerHeight = header.height();
+        var video = $('.header-video');
+        video.css('margin-top', headerHeight);
+        console.log(headerHeight);
+      }
 
 
 })();
