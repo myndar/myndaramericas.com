@@ -1,5 +1,7 @@
 (function() {
 
+  var windowWidth = $(window).width();
+
   enquire.register("screen and (min-width:768px)", {
     match : function() {
       $(function() {
@@ -28,46 +30,48 @@
 
   });
 
-  var headerHeight = $('header').height();
-  $('header a').smoothScroll({offset: 0});
-  $('header a.video').smoothScroll({offset: -headerHeight});
-  $('a.arrow').smoothScroll({offset: 0});
-  $('a.awards').smoothScroll({offset: 0});
-  $('a.arrow-up').smoothScroll({offset: -headerHeight});
-
-
-
+  // document ready
   $(function() {
-
+    // smoothscroll
+    var headerHeight = $('header').height();
+    $('header a').smoothScroll({offset: 0});
+    $('header a.video').smoothScroll({offset: -headerHeight});
+    $('a.arrow').smoothScroll({offset: 0});
+    $('a.awards').smoothScroll({offset: 0});
+    $('a.arrow-up').smoothScroll({offset: -headerHeight});
+    // dropdown menu position
+    var subMenu = $('.submenu');
+    subMenu.css('top', headerHeight)
+    // dropdown
     var trigger = $('.trigger');
     var submenu = $('.submenu');
-
     trigger.click(function(event) {
-      event.preventDefault();
+      event.stopPropagation(); // do not bubble, just toggle
       submenu.toggle();
     });
+    $(document).click(function(){
+      submenu.hide(); // any click that bubbles all the way up hides the dropdown
+    });
 
-    // function showSubMenu() {
-    //   submenu.removeClass('hide');
-    //   submenu.addClass('show');
-    // }
-
-    // function hideSubMenu() {
-    //   submenu.removeClass('show');
-    //   submenu.addClass('hide');
-    // }
-
-    // trigger.hover(
-    //   function() {
-    //     showSubMenu();
-    //   }, function() {
-    //     hideSubMenu();
-    //   }
-    // );
-
-    // $('.submenu-item a').on("click", function(){
-    //   setTimeout(submenu.toggle(), 200);
-    // });
+    // window resize
+    window.onresize = function(){
+      // actual resize? http://tinyurl.com/qaoajzu
+      if ($(window).width() != windowWidth) {
+        // dropdown menu position
+        var headerHeight = $('header').height();
+        var subMenu = $('.submenu');
+        subMenu.css('top', headerHeight)
+      }
+    }
+    $(window).on("orientationchange",function(){
+      // dropdown menu position
+      var setDropDownPosition = function() {
+        var headerHeight = $('header').height();
+        var subMenu = $('.submenu');
+        subMenu.css('top', headerHeight)
+      };
+      setTimeout(setDropDownPosition, 400);
+    });
 
    });
 

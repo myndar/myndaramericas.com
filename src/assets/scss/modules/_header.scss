@@ -68,31 +68,45 @@
       em {
         font-style: italic;
       }
-      a, span {
+      a, span.link {
         transition: all 0.2s ease;
         display: inline-block;
         color: white;
         text-decoration: none;
         @include breakpoint(300px) {
-          font-size: .9rem;
-          padding: 1rem .5rem;
+          font-size: .7rem;
+          padding: 1rem .25rem;
         }
-        @include breakpoint(667px) {
+        @include breakpoint(550px) {
           font-size: 1rem;
         }
         @include breakpoint(800px) {
           padding: 2rem 1rem;
         }
       }
-      span:hover {
+      span.link:hover {
         cursor: pointer;
+      }
+      span.hide {
+        @include breakpoint(200px, 400px) {
+          display: none;
+        }
+      }
+      span.hidelarge {
+        display: none;
+        @include breakpoint(200px, 400px) {
+          display: inline-block;
+        }
       }
     }
 
     .submenu {
       position: absolute;
-      top: 82px;
+      // top: 82px;
       left: -1.25em;
+      @include breakpoint(200px, 400px) {
+        left: -4.25em;
+      }
       list-style: none;
       background-color: $gold;
       text-align: center;
@@ -117,7 +131,17 @@
         transition: all 0.2s ease;
         background-color: $gold;
         color: white;
-        padding: 2rem 1.5rem;
+        // padding: 2rem 1.5rem;
+        @include breakpoint(300px) {
+          font-size: .7rem;
+          padding: 1rem .25rem;
+        }
+        @include breakpoint(550px) {
+          font-size: 1rem;
+        }
+        @include breakpoint(800px) {
+          padding: 2rem 1.5rem;
+        }
       }
       a:hover {
         transition: all 0.2s ease;
