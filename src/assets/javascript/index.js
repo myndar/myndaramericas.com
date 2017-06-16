@@ -11945,7 +11945,17 @@ module.exports = new MediaQueryDispatch();
 
   var windowWidth = $(window).width();
 
-  enquire.register("screen and (min-width:768px)", {
+  enquire.register("screen and (max-width:734px)", {
+    match : function() {
+      $(function() {
+        $('.grid-column.image').each(function(index,element){
+          var textHeight = $(this).find('.info-wrapper').outerHeight();
+          console.log('textHeight = ' + textHeight);
+          $(this).css('height', textHeight)
+        });
+      });
+    }
+  }).register("screen and (min-width:768px)", {
     match : function() {
       $(function() {
         $(window).scroll(function() {

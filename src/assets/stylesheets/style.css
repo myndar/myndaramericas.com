@@ -3327,86 +3327,6 @@ html {
 h2.headline em {
   font-style: italic; }
 
-section#brand {
-  position: relative;
-  text-align: center;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  /* align horizontal */
-  -webkit-box-align: center;
-          align-items: center;
-  /* align vertical */
-  height: 100vh;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#877650+0,ffffff+50,877650+100&0.2+0,0.2+100 */
-  /* FF3.6-15 */
-  background-image: -webkit-linear-gradient(-45deg, rgba(135, 118, 80, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(135, 118, 80, 0.4) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background-image: -webkit-linear-gradient(315deg, rgba(135, 118, 80, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(135, 118, 80, 0.4) 100%);
-  background-image: linear-gradient(135deg, rgba(135, 118, 80, 0.4) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(135, 118, 80, 0.4) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33877650', endColorstr='#33877650',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  background-color: #fcf7f5; }
-  section#brand .logo {
-    width: 40vw;
-    position: relative;
-    z-index: 1; }
-  section#brand h1.intro {
-    font-weight: normal;
-    text-transform: uppercase;
-    color: #877650;
-    letter-spacing: 1px;
-    display: inline-block;
-    margin-top: 1em;
-    margin-bottom: .2em; }
-  section#brand h2.intro {
-    font-weight: normal;
-    color: #877650;
-    letter-spacing: 1px;
-    margin: 0; }
-  section#brand #arrow {
-    text-align: center;
-    margin-top: 5rem; }
-    section#brand #arrow i {
-      margin-left: -.5rem;
-      color: #877650;
-      font-size: 4rem;
-      -webkit-animation: throb 2s infinite;
-              animation: throb 2s infinite; }
-
-@-webkit-keyframes throb {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  50% {
-    -webkit-transform: translate(0, 10px);
-    transform: translate(0, 10px); }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
-
-@keyframes throb {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  50% {
-    -webkit-transform: translate(0, 10px);
-    transform: translate(0, 10px); }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
-  section#brand .image-wrapper {
-    text-align: center; }
-    section#brand .image-wrapper img {
-      max-width: 100%;
-      margin: 0 auto;
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      right: 0; }
-
 .grid-container {
   max-width: 1200px;
   margin: 0 auto; }
@@ -3414,16 +3334,22 @@ section#brand {
     clear: both;
     content: "";
     display: block; }
-  .grid-container .grid-column {
-    width: calc(100% - 40px);
-    float: left;
-    margin-left: 20px; }
+  @media (min-width: 735px) {
+    .grid-container .grid-column {
+      width: calc(100% - 40px);
+      float: left;
+      margin-left: 20px; } }
 
 section#about {
-  padding-top: 10rem;
   background-image: url(/uploads/pattern-2000.png);
   background-position: 150% 50%;
   background-repeat: no-repeat; }
+  @media (min-width: 700px) {
+    section#about {
+      padding-top: 4rem; } }
+  @media (min-width: 1100px) {
+    section#about {
+      padding-top: 10rem; } }
   section#about .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#about .image {
@@ -3436,34 +3362,32 @@ section#about {
       top: 0;
       left: 0;
       bottom: 0;
-      width: 50%;
       background-color: rgba(255, 255, 255, 0.8); }
-    section#about .image .video {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 50%;
-      background-color: rgba(255, 255, 255, 0.2); }
-      section#about .image .video .video-wrapper {
-        text-align: center;
-        margin-top: 35%;
-        color: white;
-        padding: 2rem;
-        cursor: pointer; }
-      section#about .image .video .svg {
-        width: 70px; }
+      @media (min-width: 300px) {
+        section#about .image .info {
+          width: 100%; } }
+      @media (min-width: 735px) {
+        section#about .image .info {
+          width: 70%; } }
+      @media (min-width: 1000px) {
+        section#about .image .info {
+          width: 50%; } }
     section#about .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
       section#about .image .info-wrapper h2.headline {
-        font-size: 65px;
         margin: 0;
         font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
         color: #877650; }
+        @media (min-width: 700px) {
+          section#about .image .info-wrapper h2.headline {
+            font-size: 55px; } }
+        @media (min-width: 1400px) {
+          section#about .image .info-wrapper h2.headline {
+            font-size: 65px; } }
       section#about .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
@@ -3495,8 +3419,13 @@ section#about {
 section#rfid {
   background-image: url(/uploads/pattern-2.png);
   background-position: 50% 50%;
-  background-repeat: no-repeat;
-  padding-top: 10rem; }
+  background-repeat: no-repeat; }
+  @media (min-width: 700px) {
+    section#rfid {
+      padding-top: 4rem; } }
+  @media (min-width: 1100px) {
+    section#rfid {
+      padding-top: 10rem; } }
   section#rfid .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#rfid .image {
@@ -3509,19 +3438,32 @@ section#rfid {
       top: 0;
       right: 0;
       bottom: 0;
-      width: 50%;
       background-color: rgba(135, 118, 80, 0.5); }
+      @media (min-width: 300px) {
+        section#rfid .image .info {
+          width: 100%; } }
+      @media (min-width: 735px) {
+        section#rfid .image .info {
+          width: 70%; } }
+      @media (min-width: 1000px) {
+        section#rfid .image .info {
+          width: 50%; } }
     section#rfid .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
       section#rfid .image .info-wrapper h2.headline {
-        font-size: 65px;
         margin: 0;
         font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
         color: white; }
+        @media (min-width: 700px) {
+          section#rfid .image .info-wrapper h2.headline {
+            font-size: 55px; } }
+        @media (min-width: 1400px) {
+          section#rfid .image .info-wrapper h2.headline {
+            font-size: 65px; } }
       section#rfid .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
@@ -3541,8 +3483,13 @@ section#rfid {
 section#inventory {
   background-image: url(/uploads/pattern-2000.png);
   background-position: -60% 25%;
-  background-repeat: no-repeat;
-  padding-top: 10rem; }
+  background-repeat: no-repeat; }
+  @media (min-width: 700px) {
+    section#inventory {
+      padding-top: 4rem; } }
+  @media (min-width: 1100px) {
+    section#inventory {
+      padding-top: 10rem; } }
   section#inventory .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#inventory .image {
@@ -3555,19 +3502,32 @@ section#inventory {
       top: 0;
       right: 0;
       bottom: 0;
-      width: 50%;
       background-color: rgba(255, 255, 255, 0.8); }
+      @media (min-width: 300px) {
+        section#inventory .image .info {
+          width: 100%; } }
+      @media (min-width: 735px) {
+        section#inventory .image .info {
+          width: 70%; } }
+      @media (min-width: 1000px) {
+        section#inventory .image .info {
+          width: 50%; } }
     section#inventory .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
       section#inventory .image .info-wrapper h2.headline {
-        font-size: 65px;
         margin: 0;
         font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
         color: #877650; }
+        @media (min-width: 700px) {
+          section#inventory .image .info-wrapper h2.headline {
+            font-size: 55px; } }
+        @media (min-width: 1400px) {
+          section#inventory .image .info-wrapper h2.headline {
+            font-size: 65px; } }
         section#inventory .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
@@ -3593,10 +3553,15 @@ section#inventory {
         line-height: 1.4; }
 
 section#visibility {
-  padding-top: 10rem;
   background-image: url(/uploads/pattern-2000.png);
   background-position: 150% 30%;
   background-repeat: no-repeat; }
+  @media (min-width: 700px) {
+    section#visibility {
+      padding-top: 4rem; } }
+  @media (min-width: 1100px) {
+    section#visibility {
+      padding-top: 10rem; } }
   section#visibility .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#visibility .image {
@@ -3609,19 +3574,32 @@ section#visibility {
       top: 0;
       left: 0;
       bottom: 0;
-      width: 50%;
       background-color: rgba(255, 255, 255, 0.8); }
+      @media (min-width: 300px) {
+        section#visibility .image .info {
+          width: 100%; } }
+      @media (min-width: 735px) {
+        section#visibility .image .info {
+          width: 70%; } }
+      @media (min-width: 1000px) {
+        section#visibility .image .info {
+          width: 50%; } }
     section#visibility .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
       section#visibility .image .info-wrapper h2.headline {
-        font-size: 65px;
         margin: 0;
         font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
         color: #877650; }
+        @media (min-width: 700px) {
+          section#visibility .image .info-wrapper h2.headline {
+            font-size: 55px; } }
+        @media (min-width: 1400px) {
+          section#visibility .image .info-wrapper h2.headline {
+            font-size: 65px; } }
         section#visibility .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
@@ -3647,8 +3625,13 @@ section#visibility {
 section#data {
   background-image: url(/uploads/pattern-2000.png);
   background-position: 50% 50%;
-  background-repeat: no-repeat;
-  padding-top: 10rem; }
+  background-repeat: no-repeat; }
+  @media (min-width: 700px) {
+    section#data {
+      padding-top: 4rem; } }
+  @media (min-width: 1100px) {
+    section#data {
+      padding-top: 10rem; } }
   section#data .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#data .image {
@@ -3661,19 +3644,32 @@ section#data {
       top: 0;
       left: 0;
       bottom: 0;
-      width: 50%;
       background-color: rgba(255, 255, 255, 0.8); }
+      @media (min-width: 300px) {
+        section#data .image .info {
+          width: 100%; } }
+      @media (min-width: 735px) {
+        section#data .image .info {
+          width: 70%; } }
+      @media (min-width: 1000px) {
+        section#data .image .info {
+          width: 50%; } }
     section#data .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
       section#data .image .info-wrapper h2.headline {
-        font-size: 65px;
         margin: 0;
         font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
         color: #877650; }
+        @media (min-width: 700px) {
+          section#data .image .info-wrapper h2.headline {
+            font-size: 55px; } }
+        @media (min-width: 1400px) {
+          section#data .image .info-wrapper h2.headline {
+            font-size: 65px; } }
         section#data .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
@@ -3699,8 +3695,13 @@ section#data {
 section#awards {
   background-image: url(/uploads/pattern-2000.png);
   background-position: -60% 25%;
-  background-repeat: no-repeat;
-  padding-top: 10rem; }
+  background-repeat: no-repeat; }
+  @media (min-width: 700px) {
+    section#awards {
+      padding-top: 4rem; } }
+  @media (min-width: 1100px) {
+    section#awards {
+      padding-top: 10rem; } }
   section#awards .grid-column {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#awards .image {
@@ -3714,19 +3715,32 @@ section#awards {
       top: 0;
       right: 0;
       bottom: 0;
-      width: 50%;
       background-color: rgba(255, 255, 255, 0.9); }
+      @media (min-width: 300px) {
+        section#awards .image .info {
+          width: 100%; } }
+      @media (min-width: 735px) {
+        section#awards .image .info {
+          width: 70%; } }
+      @media (min-width: 1000px) {
+        section#awards .image .info {
+          width: 50%; } }
     section#awards .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
       section#awards .image .info-wrapper h2.headline {
-        font-size: 65px;
         margin: 0;
         font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
         color: #877650; }
+        @media (min-width: 700px) {
+          section#awards .image .info-wrapper h2.headline {
+            font-size: 55px; } }
+        @media (min-width: 1400px) {
+          section#awards .image .info-wrapper h2.headline {
+            font-size: 65px; } }
       section#awards .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
@@ -3747,7 +3761,6 @@ section#awards {
         line-height: 1.4; }
 
 section#contact {
-  padding-top: 10rem;
   background-image: url(/uploads/pattern-2000.png);
   background-position: right top;
   background-repeat: no-repeat; }
@@ -3757,6 +3770,12 @@ section#contact {
     font-size: 16px;
     padding-bottom: 2rem;
     margin-bottom: 0; }
+  @media (min-width: 700px) {
+    section#contact {
+      padding-top: 4rem; } }
+  @media (min-width: 1100px) {
+    section#contact {
+      padding-top: 10rem; } }
   section#contact #bottomarrow {
     text-align: center;
     padding-bottom: 3rem; }
@@ -3780,41 +3799,63 @@ section#contact {
       top: 0;
       left: 0;
       bottom: 0;
-      width: 50%;
       background-color: rgba(135, 118, 80, 0.5); }
+      @media (min-width: 300px) {
+        section#contact .image .info {
+          width: 100%; } }
+      @media (min-width: 735px) {
+        section#contact .image .info {
+          width: 50%; } }
     section#contact .image .contact-logo {
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
-      width: 50%;
       background-color: white;
       background-image: url(/uploads/logo-gold.png);
       background-position: center 45%;
       background-repeat: no-repeat;
       background-size: 60%; }
+      @media (min-width: 300px) {
+        section#contact .image .contact-logo {
+          display: none; } }
+      @media (min-width: 735px) {
+        section#contact .image .contact-logo {
+          display: block;
+          width: 50%; } }
     section#contact .image .logo-wrapper {
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
-      width: 50%;
       text-align: center;
       background-color: white;
       background-image: url(/uploads/logo-gold.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 60%; }
+      @media (min-width: 300px) {
+        section#contact .image .logo-wrapper {
+          display: none; } }
+      @media (min-width: 735px) {
+        section#contact .image .logo-wrapper {
+          display: block;
+          width: 50%; } }
     section#contact .image .info-wrapper {
       color: #252829;
       padding: 2rem; }
       section#contact .image .info-wrapper h2.headline {
-        font-size: 65px;
         font-weight: 700;
         line-height: 1;
         margin-top: 0;
         margin-bottom: 3rem;
         color: white; }
+        @media (min-width: 700px) {
+          section#contact .image .info-wrapper h2.headline {
+            font-size: 55px; } }
+        @media (min-width: 1400px) {
+          section#contact .image .info-wrapper h2.headline {
+            font-size: 65px; } }
       section#contact .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 20px;
