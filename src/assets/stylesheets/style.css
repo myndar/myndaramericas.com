@@ -3035,8 +3035,13 @@ header {
   header .header-wrapper {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    display: inline-block;
-    margin-left: -100px; }
+    display: inline-block; }
+    @media (min-width: 768px) {
+      header .header-wrapper {
+        margin-left: -70px; } }
+    @media (min-width: 800px) {
+      header .header-wrapper {
+        margin-left: -100px; } }
   header.scrolled .header-wrapper {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -3070,28 +3075,29 @@ header {
       @media (min-width: 800px) {
         header div.mini-logo img.mini-logo {
           max-width: 90px; } }
-  header a {
-    color: white;
-    text-decoration: none; }
   header .menu-item {
     display: inline-block;
     position: relative; }
     header .menu-item em {
       font-style: italic; }
-    header .menu-item a {
+    header .menu-item a, header .menu-item span {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
-      display: inline-block; }
+      display: inline-block;
+      color: white;
+      text-decoration: none; }
       @media (min-width: 300px) {
-        header .menu-item a {
-          font-size: .9rem; } }
-      @media (min-width: 667px) {
-        header .menu-item a {
-          font-size: 1rem;
+        header .menu-item a, header .menu-item span {
+          font-size: .9rem;
           padding: 1rem .5rem; } }
+      @media (min-width: 667px) {
+        header .menu-item a, header .menu-item span {
+          font-size: 1rem; } }
       @media (min-width: 800px) {
-        header .menu-item a {
+        header .menu-item a, header .menu-item span {
           padding: 2rem 1rem; } }
+    header .menu-item span:hover {
+      cursor: pointer; }
   header .submenu {
     position: absolute;
     top: 82px;
