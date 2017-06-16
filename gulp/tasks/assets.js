@@ -28,6 +28,7 @@ gulp.task('scripts', () =>
     'src/assets/javascript/vendor.js',
     'src/assets/javascript/smooth-scroll.js',
     'src/assets/javascript/remodal.js',
+    'src/assets/javascript/enquire.js',
     'src/assets/javascript/main.js'
   ])
     .pipe(newer('.tmp/assets/javascript/index.js', {dest: '.tmp/assets/javascript', ext: '.js'}))

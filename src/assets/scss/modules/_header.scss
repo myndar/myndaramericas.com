@@ -32,8 +32,16 @@
         padding: 0;
       }
       img.mini-logo {
-        display: inline;
-        max-width: 90px;
+        @include breakpoint(300px) {
+          display: none;
+        }
+        @include breakpoint(768px) {
+          display: inline;
+          max-width: 60px;
+        }
+        @include breakpoint(800px) {
+          max-width: 90px;
+        }
         vertical-align: middle;
       }
     }
@@ -62,7 +70,17 @@
       a {
         transition: all 0.2s ease;
         display: inline-block;
-        padding: 2rem 1rem;
+        @include breakpoint(300px) {
+          font-size: .9rem;
+        }
+        @include breakpoint(667px) {
+          font-size: 1rem;
+          padding: 1rem .5rem;
+        }
+        @include breakpoint(800px) {
+          padding: 2rem 1rem;
+        }
+
       }
       // a:hover {
       //   transition: all 0.2s ease;
