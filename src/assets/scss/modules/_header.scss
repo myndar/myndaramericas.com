@@ -56,6 +56,9 @@
     .menu-item {
       display: inline-block;
       position: relative;
+      em {
+        font-style: italic;
+      }
       a {
         transition: all 0.2s ease;
         display: inline-block;

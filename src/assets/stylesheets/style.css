@@ -3068,6 +3068,8 @@ header {
   header .menu-item {
     display: inline-block;
     position: relative; }
+    header .menu-item em {
+      font-style: italic; }
     header .menu-item a {
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease;
@@ -3266,6 +3268,9 @@ html {
 
 html {
   font-family: 'Maven Pro', sans-serif; }
+
+h2.headline em {
+  font-style: italic; }
 
 section#brand {
   position: relative;
@@ -3469,7 +3474,8 @@ section#rfid {
         margin-top: 0;
         margin-bottom: 1rem; }
         section#rfid .image .info-wrapper h3.subhead span {
-          font-weight: 700; }
+          font-weight: 700;
+          text-decoration: underline; }
       section#rfid .image .info-wrapper p, section#rfid .image .info-wrapper ul {
         font-size: 18px;
         line-height: 1.4;
@@ -3522,6 +3528,8 @@ section#inventory {
         font-size: 18px;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        section#inventory .image .info-wrapper p em {
+          font-style: italic; }
       section#inventory .image .info-wrapper p, section#inventory .image .info-wrapper ul {
         font-size: 18px;
         line-height: 1.4;
@@ -3572,6 +3580,8 @@ section#visibility {
         margin-bottom: 1rem; }
         section#visibility .image .info-wrapper h3.subhead span {
           font-weight: 700; }
+      section#visibility .image .info-wrapper p em {
+        font-style: italic; }
       section#visibility .image .info-wrapper p, section#visibility .image .info-wrapper ul {
         font-size: 18px;
         line-height: 1.4;
@@ -3640,7 +3650,7 @@ section#awards {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#awards .image {
     height: 700px;
-    background: url("/uploads/awards-crop.jpg") no-repeat;
+    background: url("/uploads/awards.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     position: relative; }
@@ -3686,15 +3696,19 @@ section#contact {
   background-image: url(/uploads/pattern-2000.png);
   background-position: right top;
   background-repeat: no-repeat; }
+  section#contact p.footer {
+    text-align: center;
+    color: #252829;
+    font-size: 16px;
+    padding-bottom: 2rem;
+    margin-bottom: 0; }
   section#contact #bottomarrow {
     text-align: center;
-    padding-bottom: 5rem; }
+    padding-bottom: 3rem; }
     section#contact #bottomarrow i {
       margin-left: -.5rem;
       color: #877650;
-      font-size: 4rem;
-      -webkit-animation: throb 2s infinite;
-              animation: throb 2s infinite; }
+      font-size: 4rem; }
     section#contact #bottomarrow a {
       text-decoration: none;
       color: #252829;

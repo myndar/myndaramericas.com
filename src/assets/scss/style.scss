@@ -28,6 +28,10 @@ body {
   // padding-bottom: 6rem;
 }
 
+h2.headline em {
+  font-style: italic;
+}
+
 section#brand {
   position: relative;
   text-align: center;
@@ -251,6 +255,7 @@ section#rfid {
         margin-bottom: 1rem;
         span {
           font-weight: 700;
+          text-decoration: underline;
         }
       }
       p, ul {
@@ -338,6 +343,9 @@ section#inventory {
         font-size: 18px;
         line-height: 1.4;
         margin-bottom: 1rem;
+        em {
+          font-style: italic;
+        }
       }
       p, ul {
         font-size: 18px;
@@ -401,6 +409,9 @@ section#visibility {
         span {
           font-weight: 700;
         }
+      }
+      p em {
+        font-style: italic;
       }
       p, ul {
         font-size: 18px;
@@ -492,7 +503,7 @@ section#awards {
   }
   .image {
     height: 700px;
-    background: url('/uploads/awards-crop.jpg') no-repeat;
+    background: url('/uploads/awards.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -545,6 +556,13 @@ section#awards {
 }
 
 section#contact {
+  p.footer {
+    text-align: center;
+    color: $gray;
+    font-size: 16px;
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+  }
   padding-top: 10rem;
   background-image: url(/uploads/pattern-2000.png);
   background-position: right top;
@@ -552,12 +570,11 @@ section#contact {
   // background-color: #fcf7f5;
   #bottomarrow {
     text-align: center;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     i {
       margin-left: -.5rem;
       color: $gold;
       font-size: 4rem;
-      animation: throb 2s infinite;
     }
     a {
       text-decoration: none;
@@ -690,3 +707,5 @@ section#contact {
   :focus::-moz-placeholder          {color: transparent}
   :focus:-moz-placeholder           {color: transparent}
   :focus:-ms-input-placeholder      {color: transparent}
+
+
