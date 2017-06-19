@@ -11950,7 +11950,7 @@ module.exports = new MediaQueryDispatch();
       $(function() {
         $('.grid-column.image').each(function(index,element){
           var textHeight = $(this).find('.info-wrapper').outerHeight();
-          console.log('textHeight = ' + textHeight);
+          // console.log('textHeight = ' + textHeight);
           $(this).css('height', textHeight)
         });
       });
@@ -11987,16 +11987,14 @@ module.exports = new MediaQueryDispatch();
   // document ready
   $(function() {
     setVideoMargin();
-    // smoothscroll
-    var headerHeight = $('header').height();
-    $('header a').smoothScroll({offset: 0});
-    $('header a.video').smoothScroll({offset: -headerHeight});
-    $('a.arrow').smoothScroll({offset: 0});
-    $('a.awards').smoothScroll({offset: 0});
-    $('a.arrow-up').smoothScroll({offset: -headerHeight});
+    setScrollOffset();
     // dropdown menu position
-    var subMenu = $('.submenu');
-    subMenu.css('top', headerHeight)
+    var setDropDownPosition = function() {
+      var headerHeight = $('header').outerHeight();
+      var subMenu = $('.submenu');
+      subMenu.css('top', headerHeight)
+    };
+    setDropDownPosition();
     // dropdown
     var trigger = $('.trigger');
     var submenu = $('.submenu');
@@ -12013,6 +12011,7 @@ module.exports = new MediaQueryDispatch();
       // actual resize? http://tinyurl.com/qaoajzu
       if ($(window).width() != windowWidth) {
         setTimeout(setVideoMargin, 400);
+        setTimeout(setScrollOffset, 400);
         // dropdown menu position
         var headerHeight = $('header').height();
         var subMenu = $('.submenu');
@@ -12021,6 +12020,7 @@ module.exports = new MediaQueryDispatch();
     }
     $(window).on("orientationchange",function(){
       setTimeout(setVideoMargin, 400);
+      setTimeout(setScrollOffset, 400);
       // dropdown menu position
       var setDropDownPosition = function() {
         var headerHeight = $('header').height();
@@ -12158,7 +12158,20 @@ module.exports = new MediaQueryDispatch();
         var headerHeight = header.height();
         var video = $('.header-video');
         video.css('margin-top', headerHeight);
-        console.log(headerHeight);
+        // console.log(headerHeight);
+      }
+
+      var setScrollOffset = function() {
+        // smoothscroll
+        var headerHeight = $('header').height();
+        var topPadding = $('#about').css('padding-top');
+        // var topPaddingNum = parseInt(topPadding);
+        // console.log('topPadding:' + topPadding + ', headerHeight:' + headerHeight);
+        $('header a').smoothScroll({offset: -headerHeight});
+        $('header a.video').smoothScroll({offset: -headerHeight});
+        $('a.arrow').smoothScroll({offset: 0});
+        $('a.awards').smoothScroll({offset: 0});
+        $('a.arrow-up').smoothScroll({offset: -headerHeight});
       }
 
 
