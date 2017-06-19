@@ -3374,7 +3374,10 @@ section#about {
           width: 50%; } }
     section#about .image .info-wrapper {
       color: #252829;
-      padding: 2rem; }
+      padding: 2rem 1rem; }
+      @media (min-width: 500px) {
+        section#about .image .info-wrapper {
+          padding: 2rem; } }
       section#about .image .info-wrapper h2.headline {
         margin: 0;
         font-weight: 700;
@@ -3450,7 +3453,10 @@ section#rfid {
           width: 50%; } }
     section#rfid .image .info-wrapper {
       color: #252829;
-      padding: 2rem; }
+      padding: 2rem 1rem; }
+      @media (min-width: 500px) {
+        section#rfid .image .info-wrapper {
+          padding: 2rem; } }
       section#rfid .image .info-wrapper h2.headline {
         margin: 0;
         font-weight: 700;
@@ -3514,7 +3520,10 @@ section#inventory {
           width: 50%; } }
     section#inventory .image .info-wrapper {
       color: #252829;
-      padding: 2rem; }
+      padding: 2rem 1rem; }
+      @media (min-width: 500px) {
+        section#inventory .image .info-wrapper {
+          padding: 2rem; } }
       section#inventory .image .info-wrapper h2.headline {
         margin: 0;
         font-weight: 700;
@@ -3586,7 +3595,10 @@ section#visibility {
           width: 50%; } }
     section#visibility .image .info-wrapper {
       color: #252829;
-      padding: 2rem; }
+      padding: 2rem 1rem; }
+      @media (min-width: 500px) {
+        section#visibility .image .info-wrapper {
+          padding: 2rem; } }
       section#visibility .image .info-wrapper h2.headline {
         margin: 0;
         font-weight: 700;
@@ -3656,7 +3668,10 @@ section#data {
           width: 50%; } }
     section#data .image .info-wrapper {
       color: #252829;
-      padding: 2rem; }
+      padding: 2rem 1rem; }
+      @media (min-width: 500px) {
+        section#data .image .info-wrapper {
+          padding: 2rem; } }
       section#data .image .info-wrapper h2.headline {
         margin: 0;
         font-weight: 700;
@@ -3727,7 +3742,10 @@ section#awards {
           width: 50%; } }
     section#awards .image .info-wrapper {
       color: #252829;
-      padding: 2rem; }
+      padding: 2rem 1rem; }
+      @media (min-width: 500px) {
+        section#awards .image .info-wrapper {
+          padding: 2rem; } }
       section#awards .image .info-wrapper h2.headline {
         margin: 0;
         font-weight: 700;
@@ -3843,7 +3861,10 @@ section#contact {
           width: 50%; } }
     section#contact .image .info-wrapper {
       color: #252829;
-      padding: 2rem; }
+      padding: 2rem 1rem; }
+      @media (min-width: 500px) {
+        section#contact .image .info-wrapper {
+          padding: 2rem; } }
       section#contact .image .info-wrapper h2.headline {
         font-weight: 700;
         line-height: 1;

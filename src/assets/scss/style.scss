@@ -84,7 +84,10 @@ section#about {
     }
     .info-wrapper {
       color: $gray;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      @include breakpoint(500px) {
+        padding: 2rem;
+      }
       h2.headline {
         @include breakpoint(700px) {
           font-size: 55px;
@@ -173,7 +176,10 @@ section#rfid {
     }
     .info-wrapper {
       color: $gray;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      @include breakpoint(500px) {
+        padding: 2rem;
+      }
       h2.headline {
         @include breakpoint(700px) {
           font-size: 55px;
@@ -249,7 +255,10 @@ section#inventory {
     }
     .info-wrapper {
       color: $gray;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      @include breakpoint(500px) {
+        padding: 2rem;
+      }
       h2.headline {
         @include breakpoint(700px) {
           font-size: 55px;
@@ -335,7 +344,10 @@ section#visibility {
     }
     .info-wrapper {
       color: $gray;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      @include breakpoint(500px) {
+        padding: 2rem;
+      }
       h2.headline {
         @include breakpoint(700px) {
           font-size: 55px;
@@ -419,7 +431,10 @@ section#data {
     }
     .info-wrapper {
       color: $gray;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      @include breakpoint(500px) {
+        padding: 2rem;
+      }
       h2.headline {
         @include breakpoint(700px) {
           font-size: 55px;
@@ -504,7 +519,10 @@ section#awards {
     }
     .info-wrapper {
       color: $gray;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      @include breakpoint(500px) {
+        padding: 2rem;
+      }
       h2.headline {
         @include breakpoint(700px) {
           font-size: 55px;
@@ -640,7 +658,10 @@ section#contact {
     }
     .info-wrapper {
       color: $gray;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      @include breakpoint(500px) {
+        padding: 2rem;
+      }
       h2.headline {
         @include breakpoint(700px) {
           font-size: 55px;
