@@ -3173,6 +3173,18 @@ section.header-video {
     width: 100%; }
   section.header-video .full-height {
     height: 100%; }
+  section.header-video .grid-column.bg {
+    position: relative; }
+  @media (min-width: 300px) and (max-width: 767px) {
+    section.header-video .grid-column.bg::before {
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.25); } }
   @media (min-width: 768px) {
     section.header-video .header-video__teaser-video {
       width: 100%;
@@ -3393,14 +3405,20 @@ section#about {
             font-size: 65px; } }
       section#about .image .info-wrapper h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#about .image .info-wrapper h3.subhead {
+            font-size: 20px; } }
       section#about .image .info-wrapper p {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#about .image .info-wrapper p {
+            font-size: 18px; } }
         section#about .image .info-wrapper p a {
           -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease;
@@ -3413,9 +3431,12 @@ section#about {
           transition: all 0.2s ease;
           border-bottom: 1px solid; }
       section#about .image .info-wrapper p, section#about .image .info-wrapper ul {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#about .image .info-wrapper p, section#about .image .info-wrapper ul {
+            font-size: 18px; } }
       section#about .image .info-wrapper ul {
         line-height: 1.4; }
 
@@ -3441,7 +3462,7 @@ section#rfid {
       top: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(135, 118, 80, 0.5); }
+      background-color: rgba(135, 118, 80, 0.75); }
       @media (min-width: 300px) {
         section#rfid .image .info {
           width: 100%; } }
@@ -3451,9 +3472,15 @@ section#rfid {
       @media (min-width: 1000px) {
         section#rfid .image .info {
           width: 50%; } }
+      @media (min-width: 768px) {
+        section#rfid .image .info {
+          background-color: rgba(135, 118, 80, 0.5); } }
     section#rfid .image .info-wrapper {
-      color: #252829;
+      color: white;
       padding: 2rem 1rem; }
+      @media (min-width: 768px) {
+        section#rfid .image .info-wrapper {
+          color: #252829; } }
       @media (min-width: 500px) {
         section#rfid .image .info-wrapper {
           padding: 2rem; } }
@@ -3472,17 +3499,23 @@ section#rfid {
             font-size: 65px; } }
       section#rfid .image .info-wrapper h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#rfid .image .info-wrapper h3.subhead {
+            font-size: 20px; } }
         section#rfid .image .info-wrapper h3.subhead span {
           font-weight: 700;
           text-decoration: underline; }
       section#rfid .image .info-wrapper p, section#rfid .image .info-wrapper ul {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#rfid .image .info-wrapper p, section#rfid .image .info-wrapper ul {
+            font-size: 18px; } }
       section#rfid .image .info-wrapper ul {
         line-height: 1.4; }
 
@@ -3544,20 +3577,29 @@ section#inventory {
           margin-top: .2em; }
       section#inventory .image .info-wrapper h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#inventory .image .info-wrapper h3.subhead {
+            font-size: 20px; } }
       section#inventory .image .info-wrapper p {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#inventory .image .info-wrapper p {
+            font-size: 18px; } }
         section#inventory .image .info-wrapper p em {
           font-style: italic; }
       section#inventory .image .info-wrapper p, section#inventory .image .info-wrapper ul {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#inventory .image .info-wrapper p, section#inventory .image .info-wrapper ul {
+            font-size: 18px; } }
       section#inventory .image .info-wrapper ul {
         line-height: 1.4; }
 
@@ -3578,6 +3620,9 @@ section#visibility {
     background: url("/uploads/mtray-2.jpg") no-repeat;
     background-size: cover;
     position: relative; }
+    @media (min-width: 300px) and (max-width: 666px) {
+      section#visibility .image {
+        background-position: 100%; } }
     section#visibility .image .info {
       position: absolute;
       top: 0;
@@ -3619,18 +3664,24 @@ section#visibility {
           margin-top: .2em; }
       section#visibility .image .info-wrapper h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#visibility .image .info-wrapper h3.subhead {
+            font-size: 20px; } }
         section#visibility .image .info-wrapper h3.subhead span {
           font-weight: 700; }
       section#visibility .image .info-wrapper p em {
         font-style: italic; }
       section#visibility .image .info-wrapper p, section#visibility .image .info-wrapper ul {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#visibility .image .info-wrapper p, section#visibility .image .info-wrapper ul {
+            font-size: 18px; } }
       section#visibility .image .info-wrapper ul {
         line-height: 1.4; }
 
@@ -3651,6 +3702,9 @@ section#data {
     background: url("/uploads/mlog.jpg") no-repeat;
     background-size: cover;
     position: relative; }
+    @media (min-width: 300px) and (max-width: 666px) {
+      section#data .image {
+        background-position: 100%; } }
     section#data .image .info {
       position: absolute;
       top: 0;
@@ -3692,16 +3746,22 @@ section#data {
           margin-top: .2em; }
       section#data .image .info-wrapper h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#data .image .info-wrapper h3.subhead {
+            font-size: 20px; } }
         section#data .image .info-wrapper h3.subhead span {
           font-weight: 700; }
       section#data .image .info-wrapper p, section#data .image .info-wrapper ul {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#data .image .info-wrapper p, section#data .image .info-wrapper ul {
+            font-size: 18px; } }
         section#data .image .info-wrapper p span, section#data .image .info-wrapper ul span {
           font-weight: 700; }
       section#data .image .info-wrapper ul {
@@ -3761,20 +3821,24 @@ section#awards {
             font-size: 65px; } }
       section#awards .image .info-wrapper h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#awards .image .info-wrapper h3.subhead {
+            font-size: 20px; } }
         section#awards .image .info-wrapper h3.subhead span {
           font-weight: 700; }
-      section#awards .image .info-wrapper p:first-of-type {
-        margin-top: 3rem; }
       section#awards .image .info-wrapper p span {
         font-weight: 500; }
       section#awards .image .info-wrapper p, section#awards .image .info-wrapper ul {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#awards .image .info-wrapper p, section#awards .image .info-wrapper ul {
+            font-size: 18px; } }
       section#awards .image .info-wrapper ul {
         line-height: 1.4; }
 
@@ -3796,7 +3860,10 @@ section#contact {
       padding-top: 10rem; } }
   section#contact #bottomarrow {
     text-align: center;
-    padding-bottom: 3rem; }
+    padding-bottom: 1rem; }
+    @media (min-width: 768px) {
+      section#contact #bottomarrow {
+        padding-bottom: 3rem; } }
     section#contact #bottomarrow i {
       margin-left: -.5rem;
       color: #877650;
@@ -3811,7 +3878,10 @@ section#contact {
   section#contact .image {
     height: 700px;
     background-size: cover;
-    margin-bottom: 6rem; }
+    margin-bottom: 2rem; }
+    @media (min-width: 768px) {
+      section#contact .image {
+        margin-bottom: 6rem; } }
     section#contact .image .info {
       position: absolute;
       top: 0;
@@ -3879,16 +3949,22 @@ section#contact {
             font-size: 65px; } }
       section#contact .image .info-wrapper h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#contact .image .info-wrapper h3.subhead {
+            font-size: 20px; } }
         section#contact .image .info-wrapper h3.subhead span {
           font-weight: 700; }
       section#contact .image .info-wrapper p, section#contact .image .info-wrapper ul {
-        font-size: 18px;
+        font-size: 1rem;
         line-height: 1.4;
         margin-bottom: 1rem; }
+        @media (min-width: 768px) {
+          section#contact .image .info-wrapper p, section#contact .image .info-wrapper ul {
+            font-size: 18px; } }
       section#contact .image .info-wrapper ul {
         line-height: 1.4; }
       section#contact .image .info-wrapper .contact {

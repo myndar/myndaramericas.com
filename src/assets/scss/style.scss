@@ -104,13 +104,19 @@ section#about {
       }
       h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 20px;
+        }
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem;
       }
       p {
-        font-size: 18px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 18px;
+        }
         line-height: 1.4;
         margin-bottom: 1rem;
         a {
@@ -126,7 +132,10 @@ section#about {
         }
       }
       p, ul {
-        font-size: 18px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 18px;
+        }
         line-height: 1.4;
         margin-bottom: 1rem;
       }
@@ -172,10 +181,16 @@ section#rfid {
       @include breakpoint(1000px) {
         width: 50%
       }
-      background-color: rgba(135, 118, 80, 0.5);
+      background-color: rgba(135, 118, 80, 0.75);
+      @include breakpoint(768px) {
+        background-color: rgba(135, 118, 80, 0.5);
+      }
     }
     .info-wrapper {
-      color: $gray;
+      color: white;
+      @include breakpoint(768px) {
+        color: $gray;
+      }
       padding: 2rem 1rem;
       @include breakpoint(500px) {
         padding: 2rem;
@@ -196,7 +211,10 @@ section#rfid {
       }
       h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 20px;
+        }
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem;
@@ -206,7 +224,10 @@ section#rfid {
         }
       }
       p, ul {
-        font-size: 18px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 18px;
+        }
         line-height: 1.4;
         margin-bottom: 1rem;
       }
@@ -281,13 +302,19 @@ section#inventory {
       }
       h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 20px;
+        }
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem;
       }
       p {
-        font-size: 18px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 18px;
+        }
         line-height: 1.4;
         margin-bottom: 1rem;
         em {
@@ -295,7 +322,10 @@ section#inventory {
         }
       }
       p, ul {
-        font-size: 18px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 18px;
+        }
         line-height: 1.4;
         margin-bottom: 1rem;
       }
@@ -324,6 +354,9 @@ section#visibility {
   .image {
     height: 700px;
     background: url('/uploads/mtray-2.jpg') no-repeat;
+    @include breakpoint(300px, 666px) {
+      background-position: 100%;
+    }
     background-size: cover;
     position: relative;
     .info {
@@ -370,7 +403,10 @@ section#visibility {
       }
       h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 20px;
+        }
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem;
@@ -382,7 +418,10 @@ section#visibility {
         font-style: italic;
       }
       p, ul {
-        font-size: 18px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 18px;
+        }
         line-height: 1.4;
         margin-bottom: 1rem;
       }
@@ -411,6 +450,9 @@ section#data {
   .image {
     height: 700px;
     background: url('/uploads/mlog.jpg') no-repeat;
+    @include breakpoint(300px, 666px) {
+      background-position: 100%;
+    }
     background-size: cover;
     position: relative;
     .info {
@@ -457,7 +499,10 @@ section#data {
       }
       h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 20px;
+        }
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem;
@@ -466,7 +511,10 @@ section#data {
         }
       }
       p, ul {
-        font-size: 18px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 18px;
+        }
         line-height: 1.4;
         margin-bottom: 1rem;
         span {
@@ -539,7 +587,10 @@ section#awards {
       }
       h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 20px;
+        }
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem;
@@ -548,13 +599,16 @@ section#awards {
         }
       }
       p:first-of-type {
-        margin-top: 3rem;
+        // margin-top: 3rem;
       }
       p span {
         font-weight: 500;
       }
       p, ul {
-        font-size: 18px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 18px;
+        }
         line-height: 1.4;
         margin-bottom: 1rem;
       }
@@ -585,7 +639,10 @@ section#contact {
   // background-color: #fcf7f5;
   #bottomarrow {
     text-align: center;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+      @include breakpoint(768px) {
+        padding-bottom: 3rem;
+      }
     i {
       margin-left: -.5rem;
       color: $gold;
@@ -605,7 +662,10 @@ section#contact {
   .image {
     height: 700px;
     background-size: cover;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
+    @include breakpoint(768px) {
+      margin-bottom: 6rem;
+    }
     .info {
       position: absolute;
       top: 0;
@@ -677,7 +737,10 @@ section#contact {
       }
       h3.subhead {
         font-weight: 500;
-        font-size: 20px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 20px;
+        }
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem;
@@ -686,7 +749,10 @@ section#contact {
         }
       }
       p, ul {
-        font-size: 18px;
+        font-size: 1rem;
+        @include breakpoint(768px) {
+          font-size: 18px;
+        }
         line-height: 1.4;
         margin-bottom: 1rem;
       }
