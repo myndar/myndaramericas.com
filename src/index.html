@@ -78,10 +78,37 @@ visibility_section:
   headline_markdown: '*Imagine:* Product Visibility'
   subheadline_markdown: RFID lets your products speak to you.
   text_markdown: |-
-    * one
-    * two
+    * <em>Imagine</em> knowing how often a product was removed from a case, only to be put back again.
+    * <em>Imagine</em> that a novice salesperson instantly knows the best-selling points for every single product in your store. <em>Imagine</em> tracking your product’s movement at all times - who accessed it and when
 
-    this is a test
+    Through Myndar’s Smart Tray technology, unprecedented security features track the movement of <em>Smart Tagged</em> products and the people that come into contact with them.  In addition, sales staff can effortlessly access information from pricing to stock to product features instantly.
+inventory_section:
+  background_image: /uploads/scanner-2.jpg
+  headline_markdown: <em>Imagine:</em> <span>Effortless Inventory</span>
+  subheadline_markdown: 'Say goodbye to manual sorting and processing.'
+  text_markdown: >-
+    Through Myndar, inventory receiving and processing has evolved to a new era of speed, sophistication and efficiency.
+
+
+    In <span>distribution centers</span> - <em>Imagine</em> processing hundreds of products within seconds, while drastically increasing inventory accuracy and product traceability.
+    In <span>stores</span> - <em>Imagine</em> if you could do an entire store’s inventory in seconds?
+
+
+    Myndar makes this all possible
+data_section:
+  background_image: /uploads/mlog.jpg
+  headline_markdown: <em>Imagine:</em> <span>Real-time Data</span>
+  subheadline_markdown: Experience unapparelled access to your product’s and customer’s behavior
+  text_markdown: >-
+    Myndar provides access and real-time data to see what products are being pulled from a case, being sold from a case as well as visibility on products without traction.
+
+
+    * Is a product being repeatedly requested by customers but then not converted to a sale?
+
+    * Do you have 1 salesperson who makes a sale for every 5 products they show, versus another who needs to show 20?
+
+
+    This type of information provides the opportunity for immediate action to take place and issues to be corrected quickly to maximize sales.  In addition, data like this compounded over time will reveal valuable insights and predictions into customer behavior.
 ---
 <section id="video" class="header-video">
   <div class="wrapper full-height">
@@ -151,7 +178,6 @@ visibility_section:
           <h3 class="subhead">{{page.visibility_section.subheadline_markdown | markdownify}}</h3>
           {{page.visibility_section.text_markdown | markdownify}}
         </div>
-
       </div>
     </div>
   </div>
@@ -159,36 +185,26 @@ visibility_section:
 
 <section id="inventory">
   <div class="grid-container">
-    <div class="grid-column image">
+    <div class="grid-column image" style="background: url({{page.inventory_section.background_image}}) no-repeat; background-size: cover">
       <div class="info">
         <div class="info-wrapper">
-          <h2 class="headline"><em>Imagine:</em> <span>Effortless Inventory</span></h2>
-          <h3 class="subhead">Say goodbye to manual sorting and processing.</h3>
-          <p>Through Myndar, inventory receiving and processing has evolved to a new era of speed, sophistication and efficiency.</p>
-          <p>In <span>distribution centers</span> - <em>Imagine</em> processing hundreds of products within seconds, while drastically increasing inventory accuracy and product traceability.</p>
-          <p>In <span>stores</span> - <em>Imagine</em> if you could do an entire store’s inventory in seconds?</p>
-          <p>Myndar makes this all possible</p>
+          <h2 class="headline">{{page.inventory_section.headline_markdown | markdownify}}</h2>
+          <h3 class="subhead">{{page.inventory_section.subheadline_markdown | markdownify}}</h3>
+          {{page.inventory_section.text_markdown | markdownify}}
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-
 <section id="data">
   <div class="grid-container">
-    <div class="grid-column image">
+    <div class="grid-column image" style="background: url({{page.data_section.background_image}}) no-repeat; background-size: cover">
       <div class="info">
         <div class="info-wrapper">
-          <h2 class="headline"><em>Imagine:</em> <span>Real-time Data</span></h2>
-          <h3 class="subhead">Experience unapparelled access to your product’s and customer’s behavior</h3>
-          <p>Myndar provides access and real-time data to see what products are being pulled from a case, being sold from a case as well as visibility on products without traction.</p>
-          <ul>
-            <li>Is a product being repeatedly requested by customers but then not converted to a sale? </li>
-            <li>Do you have 1 salesperson who makes a sale for every 5 products they show, versus another who needs to show 20? </li>
-          </ul>
-          <p>This type of information provides the opportunity for immediate action to take place and issues to be corrected quickly to maximize sales.  In addition, data like this compounded over time will reveal valuable insights and predictions into customer behavior. </p>
+          <h2 class="headline">{{page.data_section.headline_markdown | markdownify}}</h2>
+          <h3 class="subhead">{{page.data_section.subheadline_markdown | markdownify}}</h3>
+          {{page.data_section.text_markdown | markdownify}}
         </div>
       </div>
     </div>
@@ -209,8 +225,6 @@ visibility_section:
           <p><span>2016 Hong Kong Awards for Industries</span> - Innovation and Creativity, Merit Award</p>
           <p><span>2016 Chow Tai Fook Corporation</span> - Best Cooperation Award</p>
           <p><span>2016 Chow Tai Fook Corporation</span> – 5 Stars Supplier Award</p>
-
-
         </div>
       </div>
     </div>
