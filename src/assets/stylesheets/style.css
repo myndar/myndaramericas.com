@@ -3366,7 +3366,6 @@ section#about {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#about .image {
     height: 700px;
-    background: url("/uploads/about.jpg") no-repeat;
     background-size: cover;
     position: relative; }
     section#about .image .info {
@@ -3454,7 +3453,6 @@ section#rfid {
     box-shadow: 3px 3px 18px 0px rgba(150, 150, 150, 0.8); }
   section#rfid .image {
     height: 700px;
-    background: url("/uploads/rfid.jpg") no-repeat;
     background-size: cover;
     position: relative; }
     section#rfid .image .info {

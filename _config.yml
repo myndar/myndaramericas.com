@@ -9,16 +9,23 @@ source: src
 destination: dist
 exclude:
 
+defaults:
+  -
+    scope:
+      path: "index.html"
+    values:
+      layout: default
+
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
 # NOTE: Don't use @ in front of your Twitter username
-author:
-  name: Ryan Deussing
-  email:
-  uri:
-  bio:
-  twitter:
-  github:
+# author:
+#   name:
+#   email:
+#   uri:
+#   bio:
+#   twitter:
+#   github:
 
 # _config.build.yml overwrites these options when you run `gulp build`
 # Enables future posts (posts with dates in the future) and drafts

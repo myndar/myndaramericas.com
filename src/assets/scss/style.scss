@@ -62,7 +62,6 @@ section#about {
   }
   .image {
     height: 700px;
-    background: url('/uploads/about.jpg') no-repeat;
     background-size: cover;
     position: relative;
     .info {
@@ -163,7 +162,7 @@ section#rfid {
   }
   .image {
     height: 700px;
-    background: url('/uploads/rfid.jpg') no-repeat;
+    // background: url('/uploads/rfid.jpg') no-repeat;
     background-size: cover;
     position: relative;
     .info {
