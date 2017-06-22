@@ -12143,7 +12143,7 @@ module.exports = new MediaQueryDispatch();
          success: function(data) {
            $webContact.find('.alert--loading').hide();
            $webContact.find('button[type=submit]').prop('disabled', true);
-           $webContact.append('<div class="alert alert--success">Thank you, we\'ll get back to you right away.</div>');
+           $webContact.append('<div class="alert alert--success" style="background-color: #887751;color: white;padding: 1rem">Thank you for your inquiry, we will be in touch within 24 hours.</div>');
          },
          error: function(err) {
            $webContact.find('.alert--loading').hide();

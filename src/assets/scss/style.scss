@@ -32,7 +32,6 @@ h2.headline em {
   font-style: italic;
 }
 
-
 .grid-container {
   // @include grid-visual();
   max-width: 1200px;
@@ -93,7 +92,7 @@ section#about {
           font-size: 55px;
         }
         @include breakpoint(1400px) {
-          font-size: 65px;
+          font-size: 62px;
         }
         margin: 0;
         font-weight: 700;
@@ -200,7 +199,7 @@ section#rfid {
           font-size: 55px;
         }
         @include breakpoint(1400px) {
-          font-size: 65px;
+          font-size: 62px;
         }
         margin: 0;
         font-weight: 700;
@@ -285,7 +284,7 @@ section#inventory {
           font-size: 55px;
         }
         @include breakpoint(1400px) {
-          font-size: 65px;
+          font-size: 62px;
         }
         margin: 0;
         font-weight: 700;
@@ -386,7 +385,7 @@ section#visibility {
           font-size: 55px;
         }
         @include breakpoint(1400px) {
-          font-size: 65px;
+          font-size: 62px;
         }
         margin: 0;
         font-weight: 700;
@@ -482,7 +481,7 @@ section#data {
           font-size: 55px;
         }
         @include breakpoint(1400px) {
-          font-size: 65px;
+          font-size: 62px;
         }
         margin: 0;
         font-weight: 700;
@@ -576,7 +575,7 @@ section#awards {
           font-size: 55px;
         }
         @include breakpoint(1400px) {
-          font-size: 65px;
+          font-size: 62px;
         }
         margin: 0;
         font-weight: 700;
@@ -620,6 +619,10 @@ section#awards {
 }
 
 section#contact {
+  .alert .alert--success {
+    background-color: #faffbd !important;
+    padding: 1rem !important;
+  }
   p.footer {
     text-align: center;
     color: $gray;
@@ -727,7 +730,7 @@ section#contact {
           font-size: 55px;
         }
         @include breakpoint(1400px) {
-          font-size: 65px;
+          font-size: 62px;
         }
         font-weight: 700;
         line-height: 1;

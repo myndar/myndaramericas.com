@@ -3402,7 +3402,7 @@ section#about {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#about .image .info-wrapper h2.headline {
-            font-size: 65px; } }
+            font-size: 62px; } }
       section#about .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
@@ -3496,7 +3496,7 @@ section#rfid {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#rfid .image .info-wrapper h2.headline {
-            font-size: 65px; } }
+            font-size: 62px; } }
       section#rfid .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
@@ -3569,7 +3569,7 @@ section#inventory {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#inventory .image .info-wrapper h2.headline {
-            font-size: 65px; } }
+            font-size: 62px; } }
         section#inventory .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
@@ -3656,7 +3656,7 @@ section#visibility {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#visibility .image .info-wrapper h2.headline {
-            font-size: 65px; } }
+            font-size: 62px; } }
         section#visibility .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
@@ -3738,7 +3738,7 @@ section#data {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#data .image .info-wrapper h2.headline {
-            font-size: 65px; } }
+            font-size: 62px; } }
         section#data .image .info-wrapper h2.headline span {
           display: block;
           font-weight: 700;
@@ -3818,7 +3818,7 @@ section#awards {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#awards .image .info-wrapper h2.headline {
-            font-size: 65px; } }
+            font-size: 62px; } }
       section#awards .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
@@ -3846,6 +3846,9 @@ section#contact {
   background-image: url(/uploads/pattern-2000.png);
   background-position: right top;
   background-repeat: no-repeat; }
+  section#contact .alert .alert--success {
+    background-color: #faffbd !important;
+    padding: 1rem !important; }
   section#contact p.footer {
     text-align: center;
     color: #252829;
@@ -3946,7 +3949,7 @@ section#contact {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#contact .image .info-wrapper h2.headline {
-            font-size: 65px; } }
+            font-size: 62px; } }
       section#contact .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
