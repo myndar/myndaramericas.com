@@ -15,7 +15,7 @@ defaults:
       path: "index.html"
     values:
       layout: default
-   -
+  -
     scope:
       path: "cms.md"
     values:
