@@ -38,44 +38,18 @@ rfid_section:
     a reader allowing multiple tags to be read simultaneously. This technology
     provides a number of benefits including:
 
-
-
-
-
-
-
-      - Increased inventory accuracy
-
-
-
-      - Increased visibility of stock
-
-
-
-      - Greater staff productivity
-
-
-
-      - Decreased out-of-stock items
-
-
-
-      - Decreased shrinkage
-
-
-
-      - Greater customer satisfaction
-
-
-
-      - Decreased markdowns
-
-
-
-      - Increased profit margins
+      * Increased inventory accuracy
+      * Increased visibility of stock
+      * Greater staff productivity
+      * Decreased out-of-stock items
+      * Decreased shrinkage
+      * Greater customer satisfaction
+      * Decreased markdowns
+      * Increased profit margins
 visibility_section:
   background_image: /uploads/mtray-2.jpg
-  headline_markdown: '*Imagine:* Product Visibility'
+
+  headline_markdown: <em>Imagine:</em> <span>Product Visibility</span>
   subheadline_markdown: RFID lets your products speak to you.
   text_markdown: |-
     * <em>Imagine</em> knowing how often a product was removed from a case, only to be put back again.
@@ -109,6 +83,33 @@ data_section:
 
 
     This type of information provides the opportunity for immediate action to take place and issues to be corrected quickly to maximize sales.  In addition, data like this compounded over time will reveal valuable insights and predictions into customer behavior.
+awards_section:
+  background_image: /uploads/awards.jpg
+  headline_markdown: Recent Awards
+  subheadline_markdown: With over 80 patents and enormous recognition for achievements, Myndar has established themselves as a leader in the industry.
+  text_markdown: >-
+    <span>2017 ICT</span> - Gold Award
+
+
+    <span>2016 Asia Brand Awards</span> - Top 500 Chinese Brand
+
+
+    <span>2016 Hong Kong Most Valuable Companies Awards</span> - The Trophy of Excellent
+
+
+    <span>2016 MGP</span> - Retail Technology Entrepreneur of the Year
+
+
+    <span>2016 Hong Kong Awards for Industries</span> - Innovation and Creativity, Merit Award
+
+
+    <span>2016 Chow Tai Fook Corporation</span> - Best Cooperation Award
+
+
+    <span>2016 Chow Tai Fook Corporation</span> – 5 Stars Supplier Award
+contact_section:
+  contact_phone: +1 201 599 5947
+  contact_email: info@myndaramericas.com
 ---
 <section id="video" class="header-video">
   <div class="wrapper full-height">
@@ -145,8 +146,8 @@ data_section:
     <div class="grid-column image" style="background: url({{page.about_section.background_image}}) no-repeat; background-size: cover"">
       <div class="info">
         <div class="info-wrapper">
-          <h2 class="headline">{{page.about_section.headline_markdown | markdownify}}</h2>
-          <h3 class="subhead">{{page.about_section.subheadline_markdown | markdownify}}</h3>
+          <h2 class="headline">{{page.about_section.headline_markdown | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
+          <h3 class="subhead">{{page.about_section.subheadline_markdown | markdownify  | remove: '<p>' | remove: '</p>'}}</h3>
           {{page.about_section.text_markdown | markdownify}}
         </div>
       </div>
@@ -159,8 +160,8 @@ data_section:
     <div class="grid-column image" style="background: url({{page.rfid_section.background_image}}) no-repeat; background-size: cover">
       <div class="info">
         <div class="info-wrapper">
-          <h2 class="headline">{{page.rfid_section.headline_markdown | markdownify}}</h2>
-          <h3 class="subhead">{{page.rfid_section.subheadline_markdown | markdownify}}</h3>
+          <h2 class="headline">{{page.rfid_section.headline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h2>
+          <h3 class="subhead">{{page.rfid_section.subheadline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h3>
           {{page.rfid_section.text_markdown | markdownify}}
         </div>
 
@@ -174,8 +175,8 @@ data_section:
     <div class="grid-column image" style="background: url({{page.visibility_section.background_image}}) no-repeat; background-size: cover">
       <div class="info">
         <div class="info-wrapper">
-          <h2 class="headline">{{page.visibility_section.headline_markdown | markdownify}}</h2>
-          <h3 class="subhead">{{page.visibility_section.subheadline_markdown | markdownify}}</h3>
+          <h2 class="headline">{{page.visibility_section.headline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h2>
+          <h3 class="subhead">{{page.visibility_section.subheadline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h3>
           {{page.visibility_section.text_markdown | markdownify}}
         </div>
       </div>
@@ -188,8 +189,8 @@ data_section:
     <div class="grid-column image" style="background: url({{page.inventory_section.background_image}}) no-repeat; background-size: cover">
       <div class="info">
         <div class="info-wrapper">
-          <h2 class="headline">{{page.inventory_section.headline_markdown | markdownify}}</h2>
-          <h3 class="subhead">{{page.inventory_section.subheadline_markdown | markdownify}}</h3>
+          <h2 class="headline">{{page.inventory_section.headline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h2>
+          <h3 class="subhead">{{page.inventory_section.subheadline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h3>
           {{page.inventory_section.text_markdown | markdownify}}
         </div>
       </div>
@@ -202,8 +203,8 @@ data_section:
     <div class="grid-column image" style="background: url({{page.data_section.background_image}}) no-repeat; background-size: cover">
       <div class="info">
         <div class="info-wrapper">
-          <h2 class="headline">{{page.data_section.headline_markdown | markdownify}}</h2>
-          <h3 class="subhead">{{page.data_section.subheadline_markdown | markdownify}}</h3>
+          <h2 class="headline">{{page.data_section.headline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h2>
+          <h3 class="subhead">{{page.data_section.subheadline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h3>
           {{page.data_section.text_markdown | markdownify}}
         </div>
       </div>
@@ -213,18 +214,12 @@ data_section:
 
 <section id="awards">
   <div class="grid-container">
-    <div class="grid-column image">
+    <div class="grid-column image" style="background: url({{page.awards_section.background_image}}) no-repeat; background-size: cover">
       <div class="info">
         <div class="info-wrapper">
-          <h2 class="headline">Recent Awards</h2>
-          <h3 class="subhead">With over 80 patents and enormous recognition for achievements, Myndar has established themselves as a leader in the industry.</h3>
-          <p><span>2017 ICT</span> - Gold Award</p>
-          <p><span>2016 Asia Brand Awards</span> - Top 500 Chinese Brand</p>
-          <p><span>2016 Hong Kong Most Valuable Companies Awards</span> - The Trophy of Excellent</p>
-          <p><span>2016 MGP</span> - Retail Technology Entrepreneur of the Year</p>
-          <p><span>2016 Hong Kong Awards for Industries</span> - Innovation and Creativity, Merit Award</p>
-          <p><span>2016 Chow Tai Fook Corporation</span> - Best Cooperation Award</p>
-          <p><span>2016 Chow Tai Fook Corporation</span> – 5 Stars Supplier Award</p>
+          <h2 class="headline">{{page.awards_section.headline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h2>
+          <h3 class="subhead">{{page.awards_section.subheadline_markdown | markdownify | remove: '<p>' | remove: '</p>'}}</h3>
+          {{page.awards_section.text_markdown | markdownify}}
         </div>
       </div>
     </div>
@@ -239,8 +234,8 @@ data_section:
           <h2 class="headline">Contact Us</h2>
           <div class="contact">
             <h5>Myndar Americas</h5>
-            <p>+1 201 599 5947 </p>
-            <p><a href="info@myndaramericas.com">info@myndaramericas.com</a></p>
+            <p>{{page.contact_section.contact_phone}}</p>
+            <p><a href="{{page.contact_section.contact_email}}">{{page.contact_section.contact_email}}</a></p>
             <form id="contactform" class="pure-form pure-form-aligned">
               <fieldset>
                 <div class="pure-control-group">
