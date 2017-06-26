@@ -3570,7 +3570,7 @@ section#inventory {
           display: block;
           color: #877650;
           margin-top: 0;
-          margin-bottom: 1rem; }
+          line-height: 1.2; }
       section#inventory .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
@@ -3657,7 +3657,7 @@ section#visibility {
           display: block;
           color: #877650;
           margin-top: 0;
-          margin-bottom: 1rem; }
+          line-height: 1.2; }
       section#visibility .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
@@ -3739,7 +3739,7 @@ section#data {
           display: block;
           color: #877650;
           margin-top: 0;
-          margin-bottom: 1rem; }
+          line-height: 1.2; }
       section#data .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
