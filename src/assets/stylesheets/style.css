@@ -3337,9 +3337,6 @@ html {
 html {
   font-family: 'Maven Pro', sans-serif; }
 
-h2.headline em {
-  font-style: italic; }
-
 .grid-container {
   max-width: 1200px;
   margin: 0 auto; }
@@ -3560,20 +3557,20 @@ section#inventory {
         margin: 0;
         font-weight: 700;
         line-height: 1;
-        margin-top: 0;
         margin-bottom: 1rem;
-        color: #877650; }
+        font-weight: 700;
+        color: #252829; }
         @media (min-width: 700px) {
           section#inventory .image .info-wrapper h2.headline {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#inventory .image .info-wrapper h2.headline {
             font-size: 62px; } }
-        section#inventory .image .info-wrapper h2.headline span {
+        section#inventory .image .info-wrapper h2.headline em {
           display: block;
-          font-weight: 700;
-          color: #252829;
-          margin-top: .2em; }
+          color: #877650;
+          margin-top: 0;
+          margin-bottom: 1rem; }
       section#inventory .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
@@ -3647,20 +3644,20 @@ section#visibility {
         margin: 0;
         font-weight: 700;
         line-height: 1;
-        margin-top: 0;
         margin-bottom: 1rem;
-        color: #877650; }
+        font-weight: 700;
+        color: #252829; }
         @media (min-width: 700px) {
           section#visibility .image .info-wrapper h2.headline {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#visibility .image .info-wrapper h2.headline {
             font-size: 62px; } }
-        section#visibility .image .info-wrapper h2.headline span {
+        section#visibility .image .info-wrapper h2.headline em {
           display: block;
-          font-weight: 700;
-          color: #252829;
-          margin-top: .2em; }
+          color: #877650;
+          margin-top: 0;
+          margin-bottom: 1rem; }
       section#visibility .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
@@ -3729,20 +3726,20 @@ section#data {
         margin: 0;
         font-weight: 700;
         line-height: 1;
-        margin-top: 0;
         margin-bottom: 1rem;
-        color: #877650; }
+        font-weight: 700;
+        color: #252829; }
         @media (min-width: 700px) {
           section#data .image .info-wrapper h2.headline {
             font-size: 55px; } }
         @media (min-width: 1400px) {
           section#data .image .info-wrapper h2.headline {
             font-size: 62px; } }
-        section#data .image .info-wrapper h2.headline span {
+        section#data .image .info-wrapper h2.headline em {
           display: block;
-          font-weight: 700;
-          color: #252829;
-          margin-top: .2em; }
+          color: #877650;
+          margin-top: 0;
+          margin-bottom: 1rem; }
       section#data .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;

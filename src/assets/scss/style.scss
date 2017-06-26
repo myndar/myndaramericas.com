@@ -28,10 +28,6 @@ body {
   // padding-bottom: 6rem;
 }
 
-h2.headline em {
-  font-style: italic;
-}
-
 .grid-container {
   // @include grid-visual();
   max-width: 1200px;
@@ -288,14 +284,15 @@ section#inventory {
         margin: 0;
         font-weight: 700;
         line-height: 1;
-        margin-top: 0;
         margin-bottom: 1rem;
-        color: $gold;
-        span {
+        font-weight: 700;
+        color: $gray;
+        // margin-top: .2em;
+        em {
           display: block;
-          font-weight: 700;
-          color: $gray;
-          margin-top: .2em;
+          color: $gold;
+          margin-top: 0;
+          margin-bottom: 1rem;
         }
       }
       h3.subhead {
@@ -389,14 +386,15 @@ section#visibility {
         margin: 0;
         font-weight: 700;
         line-height: 1;
-        margin-top: 0;
         margin-bottom: 1rem;
-        color: $gold;
-        span {
+        font-weight: 700;
+        color: $gray;
+        // margin-top: .2em;
+        em {
           display: block;
-          font-weight: 700;
-          color: $gray;
-          margin-top: .2em;
+          color: $gold;
+          margin-top: 0;
+          margin-bottom: 1rem;
         }
       }
       h3.subhead {
@@ -485,14 +483,15 @@ section#data {
         margin: 0;
         font-weight: 700;
         line-height: 1;
-        margin-top: 0;
         margin-bottom: 1rem;
-        color: $gold;
-        span {
+        font-weight: 700;
+        color: $gray;
+        // margin-top: .2em;
+        em {
           display: block;
-          font-weight: 700;
-          color: $gray;
-          margin-top: .2em;
+          color: $gold;
+          margin-top: 0;
+          margin-bottom: 1rem;
         }
       }
       h3.subhead {
