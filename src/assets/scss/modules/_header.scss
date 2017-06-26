@@ -79,6 +79,7 @@
         }
         @include breakpoint(550px) {
           font-size: 1rem;
+          padding: 1rem 1rem;
         }
         @include breakpoint(800px) {
           padding: 2rem 1rem;
