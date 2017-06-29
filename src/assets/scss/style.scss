@@ -175,14 +175,15 @@ section#rfid {
       @include breakpoint(1000px) {
         width: 50%
       }
-      background-color: rgba(135, 118, 80, 0.75);
-      @include breakpoint(768px) {
+      // background-color: rgba(135, 118, 80, 0.75);
+      background-color: rgba(255,255,255,0.8);
+      @include breakpoint(1000px) {
         background-color: rgba(135, 118, 80, 0.5);
       }
     }
     .info-wrapper {
-      color: white;
-      @include breakpoint(768px) {
+      // color: white;
+      @include breakpoint(1000px) {
         color: $gray;
       }
       padding: 2rem 1rem;
@@ -193,6 +194,9 @@ section#rfid {
         @include breakpoint(700px) {
           font-size: 55px;
         }
+        @include breakpoint(1000px) {
+          color: white;
+        }
         @include breakpoint(1400px) {
           font-size: 62px;
         }
@@ -201,11 +205,12 @@ section#rfid {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: white;
+        color: $gold;
       }
       h3.subhead {
         font-weight: 500;
         font-size: 1rem;
+        color: $gray;
         @include breakpoint(768px) {
           font-size: 20px;
         }

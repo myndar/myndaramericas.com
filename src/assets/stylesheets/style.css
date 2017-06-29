@@ -3289,7 +3289,9 @@ section.header-video {
     position: relative;
     top: 40%;
     -webkit-transform: translateY(-40%);
-    transform: translateY(-40%); }
+    transform: translateY(-40%);
+    padding-left: 1rem;
+    padding-right: 1rem; }
   section.header-video .logo {
     width: 30vw;
     margin-top: 1rem;
@@ -3458,7 +3460,7 @@ section#rfid {
       top: 0;
       right: 0;
       bottom: 0;
-      background-color: rgba(135, 118, 80, 0.75); }
+      background-color: rgba(255, 255, 255, 0.8); }
       @media (min-width: 300px) {
         section#rfid .image .info {
           width: 100%; } }
@@ -3468,13 +3470,12 @@ section#rfid {
       @media (min-width: 1000px) {
         section#rfid .image .info {
           width: 50%; } }
-      @media (min-width: 768px) {
+      @media (min-width: 1000px) {
         section#rfid .image .info {
           background-color: rgba(135, 118, 80, 0.5); } }
     section#rfid .image .info-wrapper {
-      color: white;
       padding: 2rem 1rem; }
-      @media (min-width: 768px) {
+      @media (min-width: 1000px) {
         section#rfid .image .info-wrapper {
           color: #252829; } }
       @media (min-width: 500px) {
@@ -3486,16 +3487,20 @@ section#rfid {
         line-height: 1;
         margin-top: 0;
         margin-bottom: 1rem;
-        color: white; }
+        color: #877650; }
         @media (min-width: 700px) {
           section#rfid .image .info-wrapper h2.headline {
             font-size: 55px; } }
+        @media (min-width: 1000px) {
+          section#rfid .image .info-wrapper h2.headline {
+            color: white; } }
         @media (min-width: 1400px) {
           section#rfid .image .info-wrapper h2.headline {
             font-size: 62px; } }
       section#rfid .image .info-wrapper h3.subhead {
         font-weight: 500;
         font-size: 1rem;
+        color: #252829;
         line-height: 1.4;
         margin-top: 0;
         margin-bottom: 1rem; }
